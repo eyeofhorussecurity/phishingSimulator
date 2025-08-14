@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EoH Security - الإبلاغ عن موقع</title>
+    
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="../img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container justify-content-between">
+            <div class="nav-logo">
+                <img src="../img/logo.png" class="img-fluid mainlogo" alt="Logo">
+                <span>EoH Security</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="/" class="nav-link">الرئيسية</a>
+                <a href="assistant.html" class="nav-link">المساعد الذكي</a>
+                <a href="#downloadExtension" class="nav-link">تحميل إضافة المتصفح</a>
+                <a href="report.html" class="nav-link active">الإبلاغ عن موقع</a>
+                <a href="blog.html" class="nav-link">المدونة</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero-section" style="padding: 60px 0;">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <i class="fas fa-flag"></i>
+                        الإبلاغ عن محتوى مشبوه
+                    </h1>
+                    <p class="hero-description">
+                        ساعدنا في حماية المجتمع من التصيد الإلكتروني بالإبلاغ عن المحتوى المشبوه
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 mb-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fas fa-exclamation-triangle text-danger"></i>
+                                    نموذج الإبلاغ
+                                </h5>
+                                <p class="card-text small-hint">
+                                    املأ النموذج أدناه للإبلاغ عن أي محتوى مشبوه واجهته. سيتم مراجعة تقريرك من قبل فريق الأمان لدينا.
+                                </p>
+
+                                <form id="reportForm">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="reporterName" class="form-label">الاسم (اختياري):</label>
+                                            <input type="text" class="form-control" id="reporterName" 
+                                                placeholder="اتركه فارغاً للإبلاغ المجهول">
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="reporterEmail" class="form-label">البريد الإلكتروني (اختياري):</label>
+                                            <input type="email" class="form-control" id="reporterEmail" 
+                                                placeholder="للتواصل معك إذا لزم الأمر">
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="threatType" class="form-label">نوع التهديد: <span class="text-danger">*</span></label>
+                                        <select class="form-select" id="threatType" required>
+                                            <option value="">اختر نوع التهديد</option>
+                                            <option value="phishing-website">موقع تصيد إلكتروني</option>
+                                            <option value="fake-email">بريد إلكتروني مزيف</option>
+                                            <option value="suspicious-sms">رسالة نصية مشبوهة</option>
+                                            <option value="social-scam">احتيال على وسائل التواصل</option>
+                                            <option value="fake-app">تطبيق مزيف</option>
+                                            <option value="phone-scam">مكالمة احتيالية</option>
+                                            <option value="malware">برمجيات خبيثة</option>
+                                            <option value="other">أخرى</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="suspiciousUrl" class="form-label">الرابط المشبوه:</label>
+                                        <input type="url" class="form-control" id="suspiciousUrl" 
+                                            placeholder="https://example.com">
+                                        <div class="form-text">إذا كان التهديد يحتوي على رابط</div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="reportDescription" class="form-label">وصف التهديد: <span class="text-danger">*</span></label>
+                                        <textarea class="form-control" id="reportDescription" rows="5" required
+                                            placeholder="اكتب تفاصيل ما واجهته، كيف وصلك المحتوى المشبوه، وأي معلومات أخرى قد تساعد في التحقيق..."></textarea>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="evidenceFiles" class="form-label">إرفاق أدلة (صور، لقطات شاشة):</label>
+                                        <input type="file" class="form-control" id="evidenceFiles" multiple 
+                                            accept="image/*,.pdf,.doc,.docx">
+                                        <div class="form-text">يمكنك إرفاق حتى 5 ملفات (الحد الأقصى 10 ميجا لكل ملف)</div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="incidentDate" class="form-label">تاريخ الحادثة:</label>
+                                        <input type="datetime-local" class="form-control" id="incidentDate">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="targetedInfo" class="form-label">المعلومات المستهدفة:</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="personalInfo">
+                                            <label class="form-check-label" for="personalInfo">معلومات شخصية</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="bankingInfo">
+                                            <label class="form-check-label" for="bankingInfo">معلومات بنكية</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="loginCredentials">
+                                            <label class="form-check-label" for="loginCredentials">بيانات تسجيل الدخول</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="otherInfo">
+                                            <label class="form-check-label" for="otherInfo">أخرى</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="additionalNotes" class="form-label">ملاحظات إضافية:</label>
+                                        <textarea class="form-control" id="additionalNotes" rows="3" 
+                                            placeholder="أي معلومات إضافية قد تساعد في التحقيق..."></textarea>
+                                    </div>
+
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="agreeTerms" required>
+                                        <label class="form-check-label" for="agreeTerms">
+                                            أوافق على <a href="#" class="text-primary">شروط الاستخدام</a> وأؤكد صحة المعلومات المقدمة
+                                        </label>
+                                    </div>
+
+                                    <div class="d-grid gap-2">
+                                        <button type="submit" class="btn btn-danger btn-lg">
+                                            <i class="fas fa-paper-plane"></i>
+                                            إرسال التقرير
+                                        </button>
+                                        <button type="reset" class="btn btn-outline-secondary">
+                                            <i class="fas fa-undo"></i>
+                                            مسح النموذج
+                                        </button>
+                                    </div>
+                                </form>
+
+                                <div id="reportSuccess" class="alert alert-success mt-4" style="display: none;">
+                                    <h6 class="alert-heading">
+                                        <i class="fas fa-check-circle"></i>
+                                        تم إرسال التقرير بنجاح!
+                                    </h6>
+                                    <p class="mb-0">
+                                        شكراً لك على المساهمة في حماية المجتمع. سيتم مراجعة تقريرك من قبل فريق الأمان لدينا خلال 24-48 ساعة.
+                                        <br><strong>رقم التقرير:</strong> <span id="reportNumber"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card shadow-sm mb-3">
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    <i class="fas fa-info-circle text-info"></i>
+                                    إرشادات الإبلاغ
+                                </h6>
+                                <ul class="small">
+                                    <li>كن دقيقاً في وصف التهديد</li>
+                                    <li>أرفق لقطات شاشة إن أمكن</li>
+                                    <li>لا تضغط على الروابط المشبوهة</li>
+                                    <li>احتفظ بنسخة من الرسالة الأصلية</li>
+                                    <li>أبلغ فوراً عن أي محاولة تصيد</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card shadow-sm mb-3">
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    <i class="fas fa-info-circle text-info"></i>
+                                    لماذا الإبلاغ مهم؟
+                                </h6>
+                                <ul class="small">
+                                    <li>يساعد في حماية المستخدمين الآخرين</li>
+                                    <li>يساهم في تطوير أنظمة الحماية</li>
+                                    <li>يساعد الجهات المختصة في التتبع</li>
+                                    <li>يقلل من انتشار التهديدات</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card shadow-sm mb-3">
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    <i class="fas fa-chart-pie text-primary"></i>
+                                    إحصائيات التقارير
+                                </h6>
+                                <div class="row text-center">
+                                    <div class="col-6">
+                                        <div class="border-end">
+                                            <h4 class="text-danger mb-0">1,247</h4>
+                                            <small class="text-muted">تقرير هذا الشهر</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <h4 class="text-success mb-0">89%</h4>
+                                        <small class="text-muted">تم حلها</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card shadow-sm mb-3">
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    <i class="fas fa-exclamation-triangle text-warning"></i>
+                                    أحدث التهديدات المبلغ عنها
+                                </h6>
+                                <div class="small">
+                                    <div class="border-bottom pb-2 mb-2">
+                                        <span class="badge bg-danger">موقع تصيد</span>
+                                        <div class="text-muted">تقليد موقع البنك الأهلي</div>
+                                        <small class="text-muted">منذ ساعة</small>
+                                    </div>
+                                    <div class="border-bottom pb-2 mb-2">
+                                        <span class="badge bg-warning">رسالة مزيفة</span>
+                                        <div class="text-muted">ادعاء الفوز بجائزة</div>
+                                        <small class="text-muted">منذ 3 ساعات</small>
+                                    </div>
+                                    <div class="pb-2">
+                                        <span class="badge bg-info">تطبيق مزيف</span>
+                                        <div class="text-muted">تقليد تطبيق بنكي</div>
+                                        <small class="text-muted">منذ 5 ساعات</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card shadow-sm mb-3">
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    <i class="fas fa-shield-alt text-success"></i>
+                                    خصوصيتك محمية
+                                </h6>
+                                <p class="small">
+                                    جميع البلاغات تتم معالجتها بسرية تامة. يمكنك الإبلاغ بشكل مجهول إذا كنت تفضل ذلك.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    <i class="fas fa-phone text-success"></i>
+                                    معلومات الاتصال
+                                </h6>
+                                <div class="small">
+                                    <p><strong>الخط الساخن:</strong> 19777</p>
+                                    <p><strong>البريد الإلكتروني:</strong> report@eohsecurity.com</p>
+                                    <p><strong>ساعات العمل:</strong> 24/7</p>
+                                    <p class="text-muted mb-0">
+                                        للحالات العاجلة، يمكنك الاتصال بالخط الساخن مباشرة
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../img/logo.png" class="img-fluid footerlogo" alt="Logo">
+                        <span>Eye of Horus Security</span>
+                    </div>
+                    <p class="footer-description">
+                        نحن نعمل على توعية المستخدمين وحمايتهم من التهديدات الرقمية 
+                        ومحاولات التصيد الإلكتروني.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">روابط مفيدة</h4>
+                    <ul class="footer-links">
+                        <li><a href="/">الرئيسية</a></li>
+                        <li><a href="#browser">إضافة المتصفح</a></li>
+                        <li><a href="assistant.html">المساعد الذكي</a></li>
+                        <li><a href="report.html">الإبلاغ عن موقع</a></li>
+                        <li><a href="blog.html">المدونة</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">تواصل معنا</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Error 404 Team. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // معالجة نموذج الإبلاغ
+        document.getElementById('reportForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const threatType = document.getElementById('threatType').value;
+            const description = document.getElementById('reportDescription').value;
+            const consent = document.getElementById('consentCheck').checked;
+            
+            if (threatType && description && consent) {
+                // إظهار رسالة النجاح
+                document.getElementById('reportSuccess').style.display = 'block';
+                
+                // مسح النموذج
+                this.reset();
+                
+                // التمرير إلى رسالة النجاح
+                document.getElementById('reportSuccess').scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'center' 
+                });
+                
+                // إخفاء الرسالة بعد 10 ثوان
+                setTimeout(() => {
+                    document.getElementById('reportSuccess').style.display = 'none';
+                }, 10000);
+            }
+        });
+        
+        // معالجة تحميل الملفات
+        document.getElementById('evidenceFiles').addEventListener('change', function(e) {
+            const files = e.target.files;
+            const maxFiles = 5;
+            const maxSize = 10 * 1024 * 1024; // 10MB
+            
+            if (files.length > maxFiles) {
+                alert(`يمكنك إرفاق حتى ${maxFiles} ملفات فقط`);
+                this.value = '';
+                return;
+            }
+            
+            for (let file of files) {
+                if (file.size > maxSize) {
+                    alert(`حجم الملف ${file.name} كبير جداً. الحد الأقصى 10 ميجا`);
+                    this.value = '';
+                    return;
+                }
+            }
+        });
+        
+        // تحديث مستوى الأولوية بناءً على نوع التهديد
+        document.getElementById('threatType').addEventListener('change', function() {
+            const impactLevel = document.getElementById('impactLevel');
+            const value = this.value;
+            
+            // تعيين مستوى افتراضي بناءً على نوع التهديد
+            if (value === 'phishing-website' || value === 'fake-app') {
+                impactLevel.value = 'high';
+            } else if (value === 'fake-email' || value === 'sms-scam') {
+                impactLevel.value = 'medium';
+            } else if (value === 'social-scam') {
+                impactLevel.value = 'low';
+            }
+        });
+    </script>
+</body>
+</html>
