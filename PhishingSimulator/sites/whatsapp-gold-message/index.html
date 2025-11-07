@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رسالة واتساب مشبوهة</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #0a0a0a;
+            color: white;
+            direction: rtl;
+            padding: 20px;
+        }
+        .phone-container {
+            max-width: 350px;
+            margin: 0 auto;
+            background: #111b21;
+            border-radius: 25px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .status-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: white;
+        }
+        .whatsapp-header {
+            background: #075e54;
+            color: white;
+            padding: 15px;
+            border-radius: 10px 10px 0 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .contact-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #25d366;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .contact-info h3 {
+            font-size: 16px;
+            margin-bottom: 2px;
+        }
+        .contact-info span {
+            font-size: 12px;
+            opacity: 0.8;
+        }
+        .chat-container {
+            background: #0b141a;
+            border-radius: 0 0 10px 10px;
+            padding: 20px;
+            min-height: 400px;
+        }
+        .message {
+            background: #005c4b;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 10px;
+            position: relative;
+            max-width: 80%;
+        }
+        .message-text {
+            line-height: 1.4;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .timestamp {
+            font-size: 11px;
+            color: #8696a0;
+            text-align: left;
+        }
+        .fake-link {
+            color: #25d366;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .urgent {
+            color: #ffd700;
+            font-weight: bold;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <div class="phone-container">
+        <div class="status-bar">
+            <span>9:41</span>
+            <span>📶 📶 📶 📶 🔋</span>
+        </div>
+        
+        <div class="whatsapp-header">
+            <div class="contact-avatar">W</div>
+            <div class="contact-info">
+                <h3>واتساب الرسمي</h3>
+                <span>متصل الآن</span>
+            </div>
+        </div>
+        
+        <div class="chat-container">
+            <div class="message">
+                <div class="message-text">
+                    🎉 <span class="urgent">مبروك!</span> 🎉<br><br>
+                    
+                    تم اختيارك للحصول على <strong>واتساب جولد</strong> المجاني!<br><br>
+                    
+                    ✨ مميزات واتساب جولد:<br>
+                    • إخفاء "آخر ظهور"<br>
+                    • إرسال 100 صورة مرة واحدة<br>
+                    • تغيير لون الواتساب<br>
+                    • قراءة الرسائل المحذوفة<br><br>
+                    
+                    <span class="urgent">⏰ العرض ينتهي خلال ساعة واحدة!</span><br><br>
+                    
+                    للحصول على واتساب جولد مجاناً:<br>
+                    1️⃣ اضغط على الرابط: <span class="fake-link">whatsapp-gold.net/free</span><br>
+                    2️⃣ أدخل رقم هاتفك<br>
+                    3️⃣ شارك الرسالة مع 10 أصدقاء<br>
+                    4️⃣ ادفع رسوم التفعيل 50 جنيه<br><br>
+                    
+                    <strong>مهم:</strong> لو مشاركتش الرسالة، حسابك هيتقفل! 😱
+                </div>
+                <div class="timestamp">الآن ✓✓</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

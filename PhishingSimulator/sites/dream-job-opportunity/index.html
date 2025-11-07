@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urgent Job Opportunity - Apply Now!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        .header {
+            background: #dc2626;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .urgent {
+            background: #fbbf24;
+            color: #92400e;
+            padding: 10px;
+            font-weight: bold;
+            text-align: center;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.5; }
+        }
+        .content {
+            padding: 30px;
+        }
+        .job-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #dc2626;
+            margin-bottom: 15px;
+        }
+        .salary {
+            font-size: 20px;
+            color: #16a34a;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .warning {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            color: #92400e;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #374151;
+        }
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #d1d5db;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .suspicious {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            color: #dc2626;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .btn {
+            width: 100%;
+            background: #dc2626;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+        .btn:hover {
+            background: #b91c1c;
+        }
+        .url-bar {
+            background: #fef3c7;
+            padding: 8px 15px;
+            font-size: 12px;
+            color: #92400e;
+            border-bottom: 1px solid #f59e0b;
+        }
+        .red-flags {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            color: #dc2626;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="url-bar">⚠️ https://apply-now-jobs.example (مشبوه - نطاق غير معروف)</div>
+    <div class="urgent">🚨 URGENT: Limited Time Offer - Apply in Next 2 Hours! 🚨</div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>💼 Dream Job Opportunity</h1>
+            <p>Work From Home - No Experience Required!</p>
+        </div>
+        
+        <div class="content">
+            <div class="job-title">Remote Data Entry Specialist</div>
+            <div class="salary">💰 Salary: $5,000 - $8,000 per month</div>
+            
+            <div class="warning">
+                ⏰ HURRY! Only 3 positions left. Apply now before it's too late!
+            </div>
+            
+            <p style="margin-bottom: 20px;">
+                Congratulations! You have been pre-selected for this exclusive opportunity. 
+                To secure your position, please provide the following information immediately:
+            </p>
+            
+            <form>
+                <div class="form-group">
+                    <label>Full Name:</label>
+                    <input type="text" placeholder="Enter your full name">
+                </div>
+                
+                <div class="form-group">
+                    <label>Email Address:</label>
+                    <input type="email" placeholder="Enter your email">
+                </div>
+                
+                <div class="form-group">
+                    <label>Phone Number:</label>
+                    <input type="tel" placeholder="Enter your phone number">
+                </div>
+                
+                <div class="suspicious">
+                    🚨 For immediate processing, we need your banking details:
+                </div>
+                
+                <div class="form-group">
+                    <label>Bank Account Number:</label>
+                    <input type="text" placeholder="Enter your bank account number">
+                </div>
+                
+                <div class="form-group">
+                    <label>Credit Card Number:</label>
+                    <input type="text" placeholder="1234 5678 9012 3456">
+                </div>
+                
+                <div class="form-group">
+                    <label>Social Security Number:</label>
+                    <input type="text" placeholder="XXX-XX-XXXX">
+                </div>
+                
+                <div class="form-group">
+                    <label>Processing Fee ($99 - Refundable):</label>
+                    <select>
+                        <option>Credit Card</option>
+                        <option>Bank Transfer</option>
+                        <option>PayPal</option>
+                    </select>
+                </div>
+                
+                <button type="button" class="btn">APPLY NOW - SECURE MY POSITION!</button>
+            </form>
+            
+            <div class="red-flags">
+                🚩 Red Flags in this job posting:
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li>Requests banking information upfront</li>
+                    <li>Unrealistic salary for "no experience"</li>
+                    <li>Artificial urgency and pressure</li>
+                    <li>Asks for processing fee</li>
+                    <li>Requests Social Security Number</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المساعد الذكي - EoH Security</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="../img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+    
+<body>
+    <nav class="navbar">
+        <div class="nav-container justify-content-between">
+            <div class="nav-logo">
+                <img src="../img/logo.png" class="img-fluid mainlogo" alt="Logo">
+                <span>EoH Security</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">الرئيسية</a>
+                <a href="#.html" class="nav-link active">المساعد الذكي</a>
+                <a href="simulator.html" class="nav-link">اختبار محاكاة</a>
+                <a href="#downloadExtension" class="nav-link">تحميل إضافة المتصفح</a>
+                <a href="report.html" class="nav-link">الإبلاغ عن موقع</a>
+                <a href="blog.html" class="nav-link">المدونة</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero-section" style="padding: 60px 0;">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <i class="fas fa-robot"></i>
+                        المساعد الذكي للأمان الرقمي
+                    </h1>
+                    <p class="hero-description">
+                        تحدث مع المساعد الذكي وأرسل له المحتوى المشبوه للحصول على تحليل فوري
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-section">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-lg-4 col-md-12 mb-3">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    <i class="fas fa-lightbulb text-warning"></i>
+                                    نصائح سريعة
+                                </h6>
+                                <ul class="small">
+                                    <li>تحقق من عنوان المرسل في الرسائل الإلكترونية</li>
+                                    <li>انتبه للأخطاء الإملائية والنحوية</li>
+                                    <li>لا تضغط على الروابط المشبوهة</li>
+                                    <li>تأكد من وجود HTTPS في المواقع المهمة</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12 mb-3">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    <i class="fas fa-question-circle text-secondary"></i>
+                                    كيف يعمل المساعد؟
+                                </h6>
+                                <p class="small">
+                                    يستخدم المساعد الذكي خوارزميات متقدمة لتحليل المحتوى والبحث عن علامات التصيد الإلكتروني مثل الروابط المشبوهة والنصوص المضللة.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-12 mb-3">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    <i class="fas fa-history text-info"></i>
+                                    التحليلات الأخيرة
+                                </h6>
+                                <div id="recentAnalyses" class="small">
+                                    <p class="text-muted">لا توجد تحليلات سابقة</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card shadow-sm p-0">
+                            
+                                <div class="chat-container">
+                                    <div class="chat-header">
+                                        <div class="message-avatar">
+                                            <i class="fas fa-robot"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-0">المساعد الذكي</h6>
+                                            <small class="opacity-75">متصل الآن</small>
+                                        </div>
+                                        <div class="ms-auto">
+                                            <select class="form-select text-center form-select-sm" id="contentType" style="background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3); color: white;">
+                                                <option value="url">رابط موقع</option>
+                                                <option value="email">رسالة إيميل</option>
+                                                <option value="sms">رسالة نصية</option>
+                                                <option value="social">منشور اجتماعي</option>
+                                                <option value="other">أخرى</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="chat-messages" id="chatMessages">
+                                        <div class="message bot">
+                                            <div class="message-avatar">
+                                                <i class="fas fa-robot"></i>
+                                            </div>
+                                            <div class="message-content">
+                                                مرحباً! أنا المساعد الذكي للأمان الرقمي. يمكنني مساعدتك في تحليل المحتوى المشبوه. أرسل لي أي رابط أو رسالة أو صورة تشك في أنها قد تكون محاولة تصيد إلكتروني.
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="quick-actions">
+                                            <button class="quick-action-btn" onclick="sendQuickMessage('أريد تحليل رابط مشبوه')">
+                                                <i class="fas fa-link"></i> تحليل رابط
+                                            </button>
+                                            <button class="quick-action-btn" onclick="sendQuickMessage('لدي رسالة إيميل مشبوهة')">
+                                                <i class="fas fa-envelope"></i> رسالة إيميل
+                                            </button>
+                                            <button class="quick-action-btn" onclick="sendQuickMessage('أريد تحليل رسالة نصية')">
+                                                <i class="fas fa-sms"></i> رسالة نصية
+                                            </button>
+                                            <button class="quick-action-btn" onclick="sendQuickMessage('كيف أحمي نفسي من التصيد؟')">
+                                                <i class="fas fa-shield-alt"></i> نصائح الحماية
+                                            </button>
+                                        </div>
+                                        
+                                        <div class="message bot typing-indicator" id="typingIndicator">
+                                            <div class="message-avatar">
+                                                <i class="fas fa-robot"></i>
+                                            </div>
+                                            <div class="typing-indicator">
+                                                <div class="typing-dots">
+                                                    <div class="typing-dot"></div>
+                                                    <div class="typing-dot"></div>
+                                                    <div class="typing-dot"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="chat-input-area">
+                                        <div class="file-preview" id="filePreview"></div>
+                                        <div class="input-group-custom">
+                                            <button class="attachment-btn" onclick="document.getElementById('fileInput').click()">
+                                                <i class="fas fa-paperclip"></i>
+                                            </button>
+                                            <textarea 
+                                                class="message-input" 
+                                                id="messageInput" 
+                                                placeholder="اكتب رسالتك هنا أو الصق المحتوى المشبوه..."
+                                                rows="1"></textarea>
+                                            <button class="send-btn" id="sendBtn">
+                                                <i class="fas fa-paper-plane"></i>
+                                            </button>
+                                        </div>
+                                        <input type="file" id="fileInput" multiple accept="image/*,.pdf,.doc,.docx" style="display: none;">
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../img/logo.png" class="img-fluid footerlogo" alt="Logo">
+                        <span>Eye of Horus Security</span>
+                    </div>
+                    <p class="footer-description">
+                        نحن نعمل على توعية المستخدمين وحمايتهم من التهديدات الرقمية 
+                        ومحاولات التصيد الإلكتروني.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">روابط مفيدة</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">الرئيسية</a></li>
+                        <li><a href="assistant.html">المساعد الذكي</a></li>
+                        <li><a href="simulator.html">اختبار محاكاة</a></li>
+                        <li><a href="#browser">إضافة المتصفح</a></li>
+                        <li><a href="report.html">الإبلاغ عن موقع</a></li>
+                        <li><a href="blog.html">المدونة</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">تواصل معنا</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Eye of Horus Team. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let selectedFiles = [];
+        
+        const messageInput = document.getElementById('messageInput');
+        const sendBtn = document.getElementById('sendBtn');
+        const chatMessages = document.getElementById('chatMessages');
+        const fileInput = document.getElementById('fileInput');
+        const filePreview = document.getElementById('filePreview');
+        const typingIndicator = document.getElementById('typingIndicator');
+        
+        messageInput.addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = Math.min(this.scrollHeight, 100) + 'px';
+        });
+        
+        messageInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+        
+        sendBtn.addEventListener('click', sendMessage);
+        
+        fileInput.addEventListener('change', function(e) {
+            const files = Array.from(e.target.files);
+            files.forEach(file => {
+                if (selectedFiles.length < 5 && file.size <= 10 * 1024 * 1024) {
+                    selectedFiles.push(file);
+                    addFilePreview(file);
+                }
+            });
+        });
+        
+        function addFilePreview(file) {
+            const fileItem = document.createElement('div');
+            fileItem.className = 'file-item';
+            fileItem.innerHTML = `
+                <i class="fas fa-file"></i>
+                <span>${file.name}</span>
+                <span class="file-remove" onclick="removeFile('${file.name}')">&times;</span>
+            `;
+            filePreview.appendChild(fileItem);
+        }
+        
+        function removeFile(fileName) {
+            selectedFiles = selectedFiles.filter(file => file.name !== fileName);
+            updateFilePreview();
+        }
+        
+        function updateFilePreview() {
+            filePreview.innerHTML = '';
+            selectedFiles.forEach(file => addFilePreview(file));
+        }
+        
+        function sendQuickMessage(message) {
+            messageInput.value = message;
+            sendMessage();
+        }
+        
+        function sendMessage() {
+            const message = messageInput.value.trim();
+            const contentType = document.getElementById('contentType').value;
+            
+            if (!message && selectedFiles.length === 0) return;
+            
+            addMessage('user', message, selectedFiles);
+            
+            messageInput.value = '';
+            messageInput.style.height = 'auto';
+            selectedFiles = [];
+            updateFilePreview();
+            
+            showTypingIndicator();
+            
+            setTimeout(() => {
+                hideTypingIndicator();
+                const response = generateBotResponse(message, contentType);
+                addMessage('bot', response);
+                addToRecentAnalyses(contentType, response);
+            }, 2000);
+        }
+        
+        function addMessage(sender, text, files = []) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}`;
+            
+            let filesHtml = '';
+            if (files.length > 0) {
+                filesHtml = `<div class="mt-2">
+                    ${files.map(file => `<small class="d-block"><i class="fas fa-file"></i> ${file.name}</small>`).join('')}
+                </div>`;
+            }
+            
+            messageDiv.innerHTML = `
+                <div class="message-avatar">
+                    <i class="fas fa-${sender === 'user' ? 'user' : 'robot'}"></i>
+                </div>
+                <div class="message-content">
+                    ${text}
+                    ${filesHtml}
+                </div>
+            `;
+            
+            chatMessages.insertBefore(messageDiv, typingIndicator);
+            scrollToBottom();
+        }
+        
+        function showTypingIndicator() {
+            typingIndicator.style.display = 'flex';
+            scrollToBottom();
+        }
+        
+        function hideTypingIndicator() {
+            typingIndicator.style.display = 'none';
+        }
+        
+        function scrollToBottom() {
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+        
+        function generateBotResponse(message, contentType) {
+            const phishingIndicators = [
+                'urgent', 'عاجل', 'فوري', 'click here', 'اضغط هنا', 'limited time', 'وقت محدود',
+                'verify account', 'تأكيد الحساب', 'suspended', 'معلق', 'winner', 'فائز',
+                'congratulations', 'مبروك', 'free money', 'فلوس مجانية', 'bitcoin', 'بيتكوين'
+            ];
+            
+            const suspiciousDomains = [
+                '.tk', '.ml', '.ga', '.cf', 'bit.ly', 'tinyurl', 'ngrok.com'
+            ];
+            
+            let indicatorCount = 0;
+            
+            phishingIndicators.forEach(indicator => {
+                if (message.toLowerCase().includes(indicator.toLowerCase())) {
+                    indicatorCount++;
+                }
+            });
+            
+            suspiciousDomains.forEach(domain => {
+                if (message.toLowerCase().includes(domain)) {
+                    indicatorCount += 2;
+                }
+            });
+            
+            let response = '';
+            
+            if (message.includes('نصائح') || message.includes('حماية')) {
+                response = `إليك أهم النصائح للحماية من التصيد الإلكتروني:
+
+🔒 تحقق دائماً من عنوان URL قبل إدخال معلوماتك
+📧 لا تثق في الرسائل التي تطلب معلومات حساسة
+🔍 ابحث عن الأخطاء الإملائية والنحوية
+🛡️ استخدم المصادقة الثنائية عند الإمكان
+📱 حدث برامجك ومتصفحك باستمرار`;
+            } else if (indicatorCount >= 4) {
+                response = `⚠️ تحذير: مستوى الخطر عالي!
+
+تم اكتشاف عدة علامات تحذيرية في المحتوى الذي أرسلته. هذا المحتوى يحتوي على مؤشرات قوية لكونه محاولة تصيد إلكتروني.
+
+التوصيات:
+❌ لا تضغط على أي روابط
+❌ لا تدخل أي معلومات شخصية
+🗑️ احذف هذه الرسالة فوراً
+📞 أبلغ عن هذا المحتوى للجهات المختصة`;
+            } else if (indicatorCount >= 2) {
+                response = `⚠️ تحذير: مستوى الخطر متوسط
+
+تم اكتشاف بعض العلامات المشبوهة في المحتوى. يُنصح بالحذر الشديد.
+
+التوصيات:
+🔍 تحقق من مصدر الرسالة بعناية
+❌ لا تدخل معلومات حساسة
+📞 تواصل مع الجهة المرسلة مباشرة للتأكد
+🔄 استخدم طرق تواصل بديلة للتحقق`;
+            } else {
+                response = `✅ مستوى الخطر منخفض
+
+لم يتم اكتشاف علامات تحذيرية واضحة، لكن يُنصح دائماً بالحذر.
+
+التوصيات:
+🔍 تحقق من صحة المعلومات من مصادر موثوقة
+⚠️ كن حذراً عند إدخال معلومات شخصية
+🔒 تأكد من أمان الموقع قبل التفاعل معه`;
+            }
+            
+            return response;
+        }
+        
+        function addToRecentAnalyses(type, analysis) {
+            const recentDiv = document.getElementById('recentAnalyses');
+            const now = new Date().toLocaleString('ar-EG');
+            
+            let riskLevel = 'منخفض';
+            let riskColor = 'success';
+            
+            if (analysis.includes('عالي')) {
+                riskLevel = 'عالي';
+                riskColor = 'danger';
+            } else if (analysis.includes('متوسط')) {
+                riskLevel = 'متوسط';
+                riskColor = 'warning';
+            }
+            
+            const analysisItem = `
+                <div class="border-bottom pb-2 mb-2">
+                    <span class="badge bg-${riskColor}">${riskLevel}</span>
+                    <small class="d-block text-muted">${type} - ${now}</small>
+                </div>
+            `;
+            
+            if (recentDiv.innerHTML.includes('لا توجد تحليلات سابقة')) {
+                recentDiv.innerHTML = analysisItem;
+            } else {
+                recentDiv.innerHTML = analysisItem + recentDiv.innerHTML;
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            scrollToBottom();
+        });
+    </script>
+</body>
+</html>

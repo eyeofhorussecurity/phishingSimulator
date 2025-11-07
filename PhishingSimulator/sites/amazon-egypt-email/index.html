@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إيميل من أمازون مصر</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            direction: rtl;
+            padding: 20px;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .email-header {
+            background: #232f3e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .fake-logo {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .email-subject {
+            background: #ff9900;
+            color: white;
+            padding: 15px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .email-content {
+            padding: 30px;
+        }
+        .greeting {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .alert-box {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .order-details {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            background: #ff9900;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        .btn:hover {
+            background: #e68900;
+        }
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            font-size: 12px;
+            color: #666;
+            border-top: 1px solid #dee2e6;
+        }
+        .email-info {
+            background: #e9ecef;
+            padding: 10px 20px;
+            font-size: 12px;
+            color: #495057;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .urgent {
+            color: #dc3545;
+            font-weight: bold;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.5; }
+        }
+        .fake-address {
+            font-size: 10px;
+            color: #999;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-info">
+            <strong>من:</strong> noreply@amazon-egypt.com<br>
+            <strong>إلى:</strong> customer@email.com<br>
+            <strong>التاريخ:</strong> اليوم 2:30 ص<br>
+            <strong>الموضوع:</strong> تحذير عاجل - مشكلة في حسابك
+        </div>
+        
+        <div class="email-header">
+            <div class="fake-logo">📦 amazon.eg</div>
+            <div>خدمة العملاء - مصر</div>
+        </div>
+        
+        <div class="email-subject">
+            ⚠️ تحذير عاجل: تم إيقاف حسابك مؤقتاً
+        </div>
+        
+        <div class="email-content">
+            <div class="greeting">
+                عزيزي العميل الكريم،
+            </div>
+            
+            <div class="alert-box">
+                <div class="urgent">🚨 تحذير أمني عاجل 🚨</div><br>
+                تم اكتشاف نشاط مشبوه في حسابك على أمازون مصر.<br>
+                لحماية حسابك، تم إيقافه مؤقتاً.
+            </div>
+            
+            <p style="margin-bottom: 20px; line-height: 1.6;">
+                لقد لاحظنا محاولات دخول غير مصرح بها إلى حسابك من عدة مواقع مختلفة.
+                لضمان أمان حسابك ومعلوماتك الشخصية، نحتاج منك تأكيد هويتك فوراً.
+            </p>
+            
+            <div class="order-details">
+                <strong>تفاصيل النشاط المشبوه:</strong><br>
+                • محاولة شراء: آيفون 15 برو ماكس - 45,000 جنيه<br>
+                • الموقع: الإسكندرية، مصر<br>
+                • الوقت: منذ 30 دقيقة<br>
+                • حالة الطلب: <span style="color: red;">معلق للمراجعة</span>
+            </div>
+            
+            <div style="text-align: center; margin: 30px 0;">
+                <div class="urgent">يجب التحقق خلال 24 ساعة وإلا سيتم حذف حسابك نهائياً!</div><br>
+                <a href="#" class="btn">تأكيد الهوية الآن</a><br>
+                <a href="#" class="btn" style="background: #dc3545;">إلغاء الطلب المشبوه</a>
+            </div>
+            
+            <p style="font-size: 14px; color: #666; line-height: 1.6;">
+                إذا لم تقم بهذا الطلب، يرجى النقر على "تأكيد الهوية" لحماية حسابك.
+                ستحتاج إلى إدخال بيانات بطاقتك الائتمانية وكلمة المرور لتأكيد هويتك.
+            </p>
+        </div>
+        
+        <div class="footer">
+            <div class="fake-address">
+                أمازون مصر المحدودة<br>
+                العنوان: شارع التحرير، وسط البلد، القاهرة<br>
+                هاتف: 19777 | البريد الإلكتروني: support@amazon-egypt.com
+            </div>
+            
+            <p style="margin-top: 15px; font-size: 10px;">
+                هذا إيميل تلقائي، يرجى عدم الرد عليه مباشرة.
+                © 2024 أمازون مصر - جميع الحقوق محفوظة
+            </p>
+        </div>
+    </div>
+</body>
+</html>
