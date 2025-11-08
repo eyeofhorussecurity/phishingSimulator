@@ -666,49 +666,26 @@ document.addEventListener("keydown", (e) => {
 document.addEventListener("DOMContentLoaded", function () {
   const cards = Array.from(document.querySelectorAll(".tips-grid .tip-card"));
   if (!cards.length) return;
-
   cards.forEach((card, i) => {
-    card.classList.remove("in-from-right","in-from-left","fade-in");
-    if (i % 6 === 0 || i % 6 === 1) {
-      card.classList.add("offset-right");
-    } else if (i % 6 === 2 || i % 6 === 3) {
-      card.classList.add("offset-left");
-    } else {
-      card.classList.add("offset-scale");
-    }
+    card.classList.remove("in-from-right","in-from-left","fade-in","offset-right","offset-left","offset-scale");
+    card.classList.add("offset-bottom"); 
     card.classList.add(`stagger-${i % 6}`);
   });
-
   const observerOptions = {
     root: null,
     rootMargin: "0px 0px -10% 0px",
     threshold: 0.15
   };
-
   const io = new IntersectionObserver((entries, obs) => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
       const card = entry.target;
-      const index = cards.indexOf(card);
-
-      if (card.classList.contains("offset-right")) {
-        card.classList.remove("offset-right");
-        void card.offsetWidth;
-        card.classList.add("in-from-right");
-      } else if (card.classList.contains("offset-left")) {
-        card.classList.remove("offset-left");
-        void card.offsetWidth;
-        card.classList.add("in-from-left");
-      } else {
-        card.classList.remove("offset-scale");
-        void card.offsetWidth;
-        card.classList.add("fade-in");
-      }
-
+      card.classList.remove("fade-in");
+      void card.offsetWidth;
+      card.classList.add("fade-in");
       obs.unobserve(card);
     });
   }, observerOptions);
-
-  
   cards.forEach(c => io.observe(c));
 });
+
