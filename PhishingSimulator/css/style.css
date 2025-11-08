@@ -43,6 +43,7 @@ body {
   color: white !important;
   font-size: 1.5rem !important;
   font-weight: 700 !important;
+  cursor: pointer;
 }
 
 .mainlogo{
@@ -485,6 +486,10 @@ body {
   transform: translateY(-2px) !important;
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3) !important;
   color: white !important;
+}
+
+.btn-outline-success:hover {
+  transform: translateY(-3px);
 }
 
 .badge {
@@ -954,7 +959,60 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+  }
+.card-title {
+  margin-right: 10px;
 }
+
+.dev-toggle-input {
+  display: none;
+}
+
+.toggle-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #007bff;
+  transition: background-color 0.3s ease;
+  padding-top: -30px;
+}
+
+.toggle-btn:hover {
+  background-color: #0056b3;
+}
+
+.toggle-icon::before {
+  content: "+";
+  color: white;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+  padding-top: -50px;
+  position: relative;
+  top: -2px;
+}
+
+.dev-toggle-input:checked + h5 .toggle-icon::before {
+  content: "-";
+  transform: rotate(180deg);
+}
+
+.form-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.6s ease, opacity 0.4s ease;
+}
+
+
+.dev-toggle-input:checked ~ .form-content {
+  max-height: 1200px; 
+  opacity: 1;
+}
+
 
 #final-card .card-body {
   padding: 40px !important;
@@ -1030,8 +1088,12 @@ ul {
   line-height: 1.6 !important;
   font-style: italic !important;
 }
+/* Report Form */
 
 
+.form-check-label {
+  margin-right: 1.5rem;
+}
 
 
 /*Chat Style*/
