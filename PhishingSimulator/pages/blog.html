@@ -61,11 +61,8 @@
                     <div class="col-lg-4 col-md-12 mb-4">
                             <div class="card shadow-sm" style="top: 90px;">
                                 <div class="card-body">
-                                <input type="checkbox" id="dev-toggle" class="dev-toggle-input" />
                                 <h5 class="card-title" style="display:flex; align-items:center; gap:15px;">
-                                    <label for="dev-toggle" class="toggle-btn" aria-hidden="true" title="عرض/إخفاء">
-                                    <span class="toggle-icon" aria-hidden="true"></span>
-                                    </label>
+                                    <i class="fa-solid fa-plus"></i>
                                     شارك تجربتك
                                     </h5>
                                 <form id="newPostForm" class="form-content">
@@ -420,18 +417,7 @@
             });
         });
         
-        document.addEventListener('click', function(e) {
-            if (e.target.closest('.btn-outline-success')) {
-                const button = e.target.closest('.btn-outline-success');
-                const currentText = button.innerHTML;
-                const currentCount = parseInt(currentText.match(/\d+/)[0]);
-                const newCount = currentCount + 1;
-                
-                button.innerHTML = currentText.replace(/\d+/, newCount);
-                button.classList.remove('btn-outline-success');
-                button.classList.add('btn-success');
-            }
-        });
+     
     </script>
 </body>
 </html>
