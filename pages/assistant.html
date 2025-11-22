@@ -20,18 +20,72 @@
         <div class="nav-container justify-content-between">
             <div class="nav-logo">
                 <img src="../img/logo.png" class="img-fluid mainlogo" alt="Logo">
-                <span>EoH Security</span>
+                <span class="brand-text">EoH Security</span>
             </div>
-            
+    
             <div class="nav-menu" id="nav-menu">
-                <a href="../index.html" class="nav-link">الرئيسية</a>
-                <a href="#.html" class="nav-link active">المساعد الذكي</a>
-                <a href="simulator.html" class="nav-link">اختبار محاكاة</a>
-                <a href="extension.html" class="nav-link">تحميل إضافة المتصفح</a>
-                <a href="report.html" class="nav-link">الإبلاغ عن موقع</a>
-                <a href="blog.html" class="nav-link">المدونة</a>
+                <a href="../index.html" class="nav-link " data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                <a href="#" class="nav-link active" data-ar="المساعد الذكي" data-en="Smart Assistant">المساعد
+                    الذكي</a>
+                <a href="simulator.html" class="nav-link" data-ar="اختبار محاكاة" data-en="Simulation Test">اختبار
+                    محاكاة</a>
+                <a href="#downloadExtension" class="nav-link" data-ar="تحميل إضافة المتصفح"
+                    data-en="Download Extension">تحميل إضافة المتصفح</a>
+    
+                <div class="dropdown d-none d-lg-block">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="dropdown-text" data-ar="المزيد" data-en="More">المزيد</span>  <i
+                            class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
+                        <li><a href="report.html" class="dropdown-item" data-ar="الإبلاغ عن موقع"
+                                data-en="Report Site">الإبلاغ عن موقع</a></li>
+                        <li><a href="blog.html" class="dropdown-item" data-ar="المدونة" data-en="Blog">المدونة</a>
+                        </li>
+                        <li><a href="#" class="dropdown-item" data-ar="تابعنا" data-en="Follow Us">تابعنا</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="mobile-more d-lg-none text-center">
+                    <a href="report.html" class="nav-link text-center" data-ar="الإبلاغ عن موقع" data-en="Report Site">الإبلاغ عن
+                        موقع</a>
+                    <a href="blog.html" class="nav-link text-center" data-ar="المدونة" data-en="Blog">المدونة</a>
+                    <a href="#" class="nav-link text-center" data-ar="تابعنا" data-en="Follow Us">تابعنا</a>
+                </div>
+    
+                <div class="nav-controls-mobile d-lg-none mt-3">
+                    <div class="dropdown-theme-switch">
+                        <div class="dropdown-toggle-switch">
+                            <label class="dropdown-switch-label">
+                                <input type="checkbox" class="dropdown-checkbox" id="themeToggleMobile">
+                                <span class="dropdown-slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="dropdown-lang-switch mt-2">
+                        <button class="lang-btn active" data-lang="ar" data-ar="العربية" data-en="Arabic">العربية</button>
+                        <button class="lang-btn" data-lang="en" data-ar="English" data-en="English">English</button>
+                    </div>
+                </div>
             </div>
-            
+    
+            <div class="nav-controls d-none d-lg-flex" id="nav-controls">
+                <div class="nav-switch">
+                    <div class="toggle-switch">
+                        <label class="switch-label">
+                            <input type="checkbox" class="checkbox" id="themeToggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="nav-language">
+                    <button class="lang-btn active" data-lang="ar">العربية</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+            </div>
+    
             <div class="nav-toggle" id="nav-toggle">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -39,6 +93,7 @@
             </div>
         </div>
     </nav>
+
 
     <main class="main-content">
         <section class="hero-section" style="padding: 60px 0;">
@@ -51,6 +106,7 @@
                     <p class="hero-description">
                         تحدث مع المساعد الذكي وأرسل له المحتوى المشبوه للحصول على تحليل فوري
                     </p>
+
                 </div>
             </div>
         </section>
@@ -58,7 +114,7 @@
         <section class="main-section">
             <div class="container">
                 <div class="row mb-4">
-                    <div class="col-lg-4 col-md-12 mb-3">
+                    <div class="col-lg-4 mt-3 col-md-12 mb-3">
                         <div class="card shadow-sm h-100">
                             <div class="card-body">
                                 <h6 class="card-title">
@@ -75,7 +131,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-12 mb-3">
+                    <div class="col-lg-4 mt-3 col-md-12 mb-3">
                         <div class="card shadow-sm h-100">
                             <div class="card-body">
                                 <h6 class="card-title">
@@ -89,7 +145,7 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-4 col-md-12 mb-3">
+                    <div class="col-lg-4 mt-3 col-md-12 mb-3">
                         <div class="card shadow-sm h-100">
                             <div class="card-body">
                                 <h6 class="card-title">
