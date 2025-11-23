@@ -361,11 +361,12 @@ body {
 /* Added new hero section styling */
 .hero-section {
   background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%) !important;
-  height: 100vh;
+  height: 90vh;
   color: white !important;
   padding: 80px 0 !important;
   text-align: center !important;
   transition: background 0.3s ease !important;
+  margin-bottom: 20px;
 }
 
 body.dark-mode .hero-section {
@@ -1817,6 +1818,7 @@ body.dark-mode .tip-card:hover .tip-description {
   background: linear-gradient(135deg, #1f2937 0%, #111827 100%) !important;
   color: white !important;
   padding: 50px 0 20px !important;
+  margin-top: 20px;
   transition: background 0.3s ease !important;
 }
 
@@ -1873,6 +1875,10 @@ body.dark-mode .footer {
 .footer-links a:hover {
   color: #3b82f6 !important;
   transform: translateX(-5px) !important;
+}
+[dir="ltr"] .footer-links a:hover {
+  color: #3b82f6 !important;
+  transform: translateX(5px) !important;
 }
 
 .social-links {
@@ -2869,9 +2875,8 @@ body.dark-mode .section-title {
   margin-right: 10px;
 }
 
-.dev-toggle-input {
-  display: none;
-}
+
+
 
 .toggle-btn {
   cursor: pointer;
@@ -2900,22 +2905,11 @@ body.dark-mode .section-title {
   top: -2px;
 }
 
-.dev-toggle-input:checked + h5 .toggle-icon::before {
-  content: "-";
-  transform: rotate(180deg);
-}
 
-.form-content {
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: max-height 0.6s ease, opacity 0.4s ease;
-}
 
-.dev-toggle-input:checked ~ .form-content {
-  max-height: 1200px;
-  opacity: 1;
-}
+
+
+
 
 #final-card .card-body {
   padding: 40px !important;
@@ -3039,6 +3033,11 @@ body.dark-mode .dropdown-menu {
   margin: 8px 0 !important;
 }
 
+#contentType option[value="url"] { background: var(--accent-color); color: #fff; }
+#contentType option[value="email"] { background: var(--accent-color); color: #fff; }
+#contentType option[value="sms"] { background: var(--accent-color); color: #fff; }
+#contentType option[value="social"] { background: var(--accent-color); color: #fff; }
+#contentType option[value="other"] { background: var(--accent-color); color: #fff; }
 
 
 /*Chat Style*/
@@ -3110,6 +3109,7 @@ body.dark-mode .dropdown-menu {
 .message.bot .message-content {
     background: white;
     border: 1px solid #e5e7eb;
+    color: black;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -3222,7 +3222,9 @@ body.dark-mode .dropdown-menu {
     padding: 8px 12px;
     background: #f3f4f6;
     border-radius: 8px;
+    color:black;
     font-size: 14px;
+    margin-bottom: 15px;
 }
 
 .file-remove {
@@ -3452,22 +3454,22 @@ body.dark-mode .tip-timeline {
 body.dark-mode .tip-timeline:hover {
   box-shadow: none;
 }
-/* إذا عندك أي icons داخل الكارد */
+
 body.dark-mode .tip-timeline i {
   color: white; 
 }
    /* Responsive: Tablet  */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* Grid: 1 card per row */
+
   .tips-grid-timeline {
-    grid-template-columns: 1fr; /* عمود واحد */
+    grid-template-columns: 1fr; 
     row-gap: 75px;
     position: relative;
   }
 
   /* Vertical timeline on the left */
   .tips-grid-timeline::after {
-    left: 25px; /* على الشمال */
+    left: 25px; 
     transform: translateX(0);
     height: 100%;
     top: 0;
@@ -3475,28 +3477,65 @@ body.dark-mode .tip-timeline i {
 
   /* Tip Cards */
   .tip-timeline {
-    width: 100%; /* تاخد كل العرض */
+    width: 100%;
     justify-self: start;
-    left: 60px !important; /* مسافة من الشمال */
+    left: 60px !important;
     right: auto !important;
     bottom: 0 !important;
   }
 
-  /* Circle indicator */
   .tip-timeline::before {
     left: -57px;
     top: 0;
   }
 
-  /* Icon داخل الدايرة */
   .tip-timeline i {
     top: -5px;
     left: -58px;
   }
 
-  /* اخفاء كل الايقونات والدوائر إلا الأول */
   .tip-timeline:not(:first-child) i,
   .tip-timeline:not(:first-child)::before {
+    display: none;
+  }
+}
+ @media screen and (min-width: 768px) and (max-width: 991px) {
+
+[dir="ltr"] .tips-grid-timeline {
+    grid-template-columns: 1fr; 
+    row-gap: 75px;
+    position: relative;
+  }
+
+  /* Vertical timeline on the left */
+ [dir="ltr"] .tips-grid-timeline::after {
+    left: 25px; 
+    transform: translateX(0);
+    height: 100%;
+    top: 0;
+  }
+
+  /* Tip Cards */
+ [dir="ltr"] .tip-timeline {
+    width: 100%;
+    justify-self: start;
+    left: 60px !important;
+    right: auto !important;
+    bottom: 0 !important;
+  }
+
+ [dir="ltr"] .tip-timeline::before {
+    left: -57px;
+    top: 0;
+  }
+
+ [dir="ltr"] .tip-timeline i {
+    top: 0px;
+    left: -56.5px;
+  }
+
+[dir="ltr"]  .tip-timeline:not(:first-child) i,
+ [dir="ltr"] .tip-timeline:not(:first-child)::before {
     display: none;
   }
 }
@@ -3505,65 +3544,56 @@ body.dark-mode .tip-timeline i {
 /* Responsive: Mobile */
 @media screen and (max-width: 767px) {
 
-  /* Grid: 1 card per row */
+  
   .tips-grid-timeline {
     grid-template-columns: 1fr;
     row-gap: 80px;
   }
 
-  /* Vertical timeline on the left */
   .tips-grid-timeline::after {
-    left: 25px; /* على الشمال */
+    left: 25px; 
     transform: translateX(0);
     height: 100%;
     top: 0;
   }
 
-  /* Tip Cards */
   .tip-timeline {
-    width: calc(100% - 60px); /* شوية مسافة من الشمال */
+    width: calc(100% - 60px); 
     left: 60px !important;
     justify-self: start;
     bottom: 0 !important;
   }
 
-  /* Circle indicator */
   .tip-timeline::before {
     left: -57px;
     top: 0;
   }
 
-  /* Icon داخل الدايرة */
   .tip-timeline i {
             top: -5px;
         left: -58px;
   }
-  /* Hide icons of all cards except the first one */
 .tip-timeline:not(:first-child) i {
     display: none;
 }
-/* Hide circles of all cards except the first one */
 .tip-timeline:not(:first-child)::before {
     display: none;
 }
 
-  /* إزالة الـ right positioning للـ right cards */
   .tip-timeline.right {
     right: auto !important;
   }
   .tip-timeline.left {
     left: auto !important;
   }
-/* Media query أو حسب الحاجة */
   [dir="ltr"] .tips-grid-timeline {
-    grid-template-columns: 1fr; /* عمود واحد */
+    grid-template-columns: 1fr; 
     row-gap: 50px;
     position: relative;
   }
 
-  /* Vertical timeline on the left */
   [dir="ltr"] .tips-grid-timeline::after {
-    left: 25px; /* على الشمال */
+    left: 25px; 
     transform: translateX(0);
     height: 100%;
     top: 0;
@@ -3571,30 +3601,26 @@ body.dark-mode .tip-timeline i {
 
   /* Tip Cards */
   [dir="ltr"] .tip-timeline {
-    width: calc(100% - 60px); /* شوية مسافة من الشمال */
+    width: calc(100% - 60px); 
     justify-self: start !important;
     left: 60px !important;
     right: auto !important;
     bottom: 0 !important;
   }
 
-  /* Circle indicator */
   [dir="ltr"] .tip-timeline::before {
     left: -57px;
     top: 0;
   }
 
-  /* Icon داخل الدايرة */
   [dir="ltr"] .tip-timeline i {
     top: 0px;
     left: -58px;
   }
 
-  /* اخفاء كل الايقونات والدوائر إلا الأول */
   [dir="ltr"] .tip-timeline:not(:first-child) i,
   [dir="ltr"] .tip-timeline:not(:first-child)::before {
     display: none;
   }
 }
-
 

@@ -16,22 +16,76 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav class="navbar">
+       <nav class="navbar">
         <div class="nav-container justify-content-between">
             <div class="nav-logo">
                 <img src="../img/logo.png" class="img-fluid mainlogo" alt="Logo">
-                <span>EoH Security</span>
+                <span class="brand-text">EoH Security</span>
             </div>
-            
+    
             <div class="nav-menu" id="nav-menu">
-                <a href="../index.html" class="nav-link">الرئيسية</a>
-                <a href="../pages/assistant.html" class="nav-link">المساعد الذكي</a>
-                <a href="#" class="nav-link active">اختبار محاكاة</a>
-                <a href="extension.html" class="nav-link">تحميل إضافة المتصفح</a>
-                <a href="../pages/report.html" class="nav-link">الإبلاغ عن موقع</a>
-                <a href="../pages/blog.html" class="nav-link">المدونة</a>
+                <a href="../index.html" class="nav-link" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                <a href="assistant.html" class="nav-link" data-ar="المساعد الذكي" data-en="Smart Assistant">المساعد
+                    الذكي</a>
+                <a href="#simulator" class="nav-link active" data-ar="اختبار محاكاة" data-en="Simulation Test">اختبار
+                    محاكاة</a>
+                <a href="#downloadExtension" class="nav-link" data-ar="تحميل إضافة المتصفح"
+                    data-en="Download Extension">تحميل إضافة المتصفح</a>
+    
+                <div class="dropdown d-none d-lg-block">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="dropdown-text" data-ar="المزيد" data-en="More">المزيد</span>  <i
+                            class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
+                        <li><a href="report.html" class="dropdown-item" data-ar="الإبلاغ عن موقع"
+                                data-en="Report Site">الإبلاغ عن موقع</a></li>
+                        <li><a href="blog.html" class="dropdown-item" data-ar="المدونة" data-en="Blog">المدونة</a>
+                        </li>
+                        <li><a href="#" class="dropdown-item" data-ar="تابعنا" data-en="Follow Us">تابعنا</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="mobile-more d-lg-none text-center">
+                    <a href="report.html" class="nav-link text-center" data-ar="الإبلاغ عن موقع" data-en="Report Site">الإبلاغ عن
+                        موقع</a>
+                    <a href="blog.html" class="nav-link text-center" data-ar="المدونة" data-en="Blog">المدونة</a>
+                    <a href="#" class="nav-link text-center" data-ar="تابعنا" data-en="Follow Us">تابعنا</a>
+                </div>
+    
+                <div class="nav-controls-mobile d-lg-none mt-3">
+                    <div class="dropdown-theme-switch">
+                        <div class="dropdown-toggle-switch">
+                            <label class="dropdown-switch-label">
+                                <input type="checkbox" class="dropdown-checkbox" id="themeToggleMobile">
+                                <span class="dropdown-slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="dropdown-lang-switch mt-2">
+                        <button class="lang-btn active" data-lang="ar" data-ar="العربية" data-en="Arabic">العربية</button>
+                        <button class="lang-btn" data-lang="en" data-ar="English" data-en="English">English</button>
+                    </div>
+                </div>
             </div>
-            
+    
+            <div class="nav-controls d-none d-lg-flex" id="nav-controls">
+                <div class="nav-switch">
+                    <div class="toggle-switch">
+                        <label class="switch-label">
+                            <input type="checkbox" class="checkbox" id="themeToggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="nav-language">
+                    <button class="lang-btn active" data-lang="ar">العربية</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+            </div>
+    
             <div class="nav-toggle" id="nav-toggle">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -52,23 +106,7 @@
                         تعلم كيفية حماية نفسك من محاولات التصيد الإلكتروني والاحتيال الرقمي. 
                         هذا الاختبار سيساعدك على التعرف على التهديدات الشائعة وكيفية تجنبها.
                     </p>
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <i class="fas fa-users"></i>
-                            <span class="stat-number">2,000+</span>
-                            <span class="stat-label">مستخدم محمي</span>
-                        </div>
-                        <div class="stat-item">
-                            <i class="fa-solid fa-percent"></i>
-                            <span class="stat-number">95%</span>
-                            <span class="stat-label">معدل الحماية</span>
-                        </div>
-                        <div class="stat-item">
-                            <i class="fas fa-clock"></i>
-                            <span class="stat-number">5</span>
-                            <span class="stat-label">دقائق للاختبار</span>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -259,7 +297,7 @@
                                 <h5>تحميل إضافة المتصفح</h5>
                                 <p>قم بتحميل اداة EoH Guard, وتصفح بلا قلق!</p>
                                 <div class="d-grid">
-                                    <a href="extension.html"><button class="btn btn-primary">تحميل الأن<i class="fi fi-br-download ms-1"></i></button></a>
+                                    <a href="extension.html"><button class="btn btn-primary">تحميل الأن  <i class="fi fi-br-download ms-1"></i></button></a>
                                 </div>
                             </div>
                         </div>
