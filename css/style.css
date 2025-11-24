@@ -3445,109 +3445,107 @@ body.dark-mode .tip-timeline i {
 }
    /* Responsive: Tablet [AR] */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-
-  .tips-grid-timeline {
-    grid-template-columns: 1fr; 
-    row-gap: 75px;
+  [dir="rtl"] .tips-grid-timeline {
+    grid-template-columns: 1fr;
+    row-gap: 80px;
     position: relative;
   }
 
-  /* Vertical timeline on the left */
-  .tips-grid-timeline::after {
-    left: 25px; 
-    transform: translateX(0);
+  [dir="rtl"] .tips-grid-timeline::after {
+    left: auto;
+    right: 25px;
+    transform: none;
     height: 100%;
     top: 0;
   }
 
-  /* Tip Cards */
-  .tip-timeline {
-    width: 95%;
-    justify-self: start;
-    margin-right: 30px;
-    left: 60px !important;
-    right: auto !important;
-    bottom: 0 !important;
+  .circle-icon { 
+    display: none;
   }
-  .tip-timeline.right{
-    width: 95%;
-    justify-self: start;
-    left: 60px !important;
-    right: auto !important;
+
+  [dir="rtl"] .tip-timeline {
+    width: calc(100% - 60px);
+    left: 60px !important; 
+    right: 25px !important;
+    justify-self: end;
     bottom: 0 !important;
   }
 
-.circle-icon {
-  display: none;
+  [dir="rtl"] .tip-timeline.right,
+  [dir="rtl"] .tip-timeline.left {
+    left: 60px !important;
+    right: 25px !important;
+    justify-self: end;
+  }
 }
-}
+
    /* Responsive: Tablet [EN] */
 
  @media screen and (min-width: 768px) and (max-width: 991px) {
 
 
-  [dir="ltr"] .tips-grid-timeline {
-      grid-template-columns: 1fr; 
-      row-gap: 75px;
-      position: relative;
-  }
+ [dir="ltr"] .tips-grid-timeline {
+    grid-template-columns: 1fr;
+    row-gap: 75px;
+    position: relative;
+}
 
-  /* The Line on the right */
-  [dir="ltr"] .tips-grid-timeline::after {
-      right: 25px;      
-      left: auto;       
-      transform: none;  
-      height: 100%;
-      top: 0;
-  }
+/* The line on the LEFT */
+[dir="ltr"] .tips-grid-timeline::after {
+    left: 25px;       /* ← الخط هنا */
+    right: auto;
+    transform: none;
+    height: 100%;
+    top: 0;
+}
 
-  /* Tip Cards */
-  [dir="ltr"] .tip-timeline {
-      width: 95%;
-      justify-self: start;
-      left: auto !important;
-      right: 60px !important;   
-      bottom: 0 !important;
-      margin-left: 35px;
+/* Cards on the RIGHT */
+[dir="ltr"] .tip-timeline {
+    width: 95%;
+    justify-self: end;     /* ← يخليها يمين */
+    right: auto !important;
+    left: 60px !important; /* ← تبعد عن الخط */
+    bottom: 0 !important;
+    margin-right: 35px;
+}
 
-  }
-
-  [dir="ltr"] .tip-timeline.right {
-      width: 95%;
-      justify-self: start;
-      left: auto !important;
-      right: 60px !important;
-      bottom: 0 !important;
-      margin-left: 35px;
-  }
+[dir="ltr"] .tip-timeline.right {
+    justify-self: end;
+    left: 60px !important;
+}
 }
 
 
-/* Responsive: Mobile [AR] */
 @media screen and (max-width: 767px) {
-  .tips-grid-timeline {
+  [dir="rtl"] .tips-grid-timeline {
     grid-template-columns: 1fr;
     row-gap: 80px;
+    position: relative;
   }
-  .tips-grid-timeline::after {
-    left: 25px; 
-    transform: translateX(0);
+
+  [dir="rtl"] .tips-grid-timeline::after {
+    right: 25px;      
+    left: auto;
+    transform: none;
     height: 100%;
     top: 0;
   }
-  .circle-icon{
+
+  .circle-icon{ 
     display: none;
   }
-  .tip-timeline {
+
+  [dir="rtl"] .tip-timeline {
     width: calc(100% - 60px); 
-    left: 60px !important;
+    right: 60px !important;   
+    left: auto !important;
     justify-self: start;
     bottom: 0 !important;
   }
-  .tip-timeline.right {
-    right: auto !important;
-  }
-  .tip-timeline.left {
+
+  [dir="rtl"] .tip-timeline.right,
+   .tip-timeline.left {
+    right: 60px !important;
     left: auto !important;
   }
 }
@@ -3564,23 +3562,25 @@ body.dark-mode .tip-timeline i {
   }
 
   [dir="ltr"] .tips-grid-timeline::after {
-    left: auto;
-    right: 25px; 
+    left: -25px;
+    right: auto; 
     transform: none;
     height: 100%;
     top: 0;
+    margin-left: 20px;
   }
 
   /* Tip Cards */
   [dir="ltr"] .tip-timeline {
     width: calc(100% - 60px); 
     justify-self: start !important;
-    left: 0 !important;
+    left: 50px !important;
     right: auto !important;
     bottom: 0 !important;
   }
   [dir="ltr"] .circle-icon {
     display: none;
   }
+  
 }
 
