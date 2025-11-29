@@ -861,3 +861,40 @@ document.addEventListener("DOMContentLoaded", () => {
   }, observerOptions)
   cards.forEach((c) => io.observe(c))
 })
+
+
+// نختار كل العناصر اللي عليها كلاس scroll-element
+const scrollElements = document.querySelectorAll(".scroll-element");
+
+// دالة تتحقق إذا العنصر ظهر على الشاشة
+const elementInView = (el, offset = 0) => {
+    const elementTop = el.getBoundingClientRect().top;
+    return elementTop <= (window.innerHeight || document.documentElement.clientHeight) - offset;
+};
+
+// دالة تضيف الكلاس show
+const displayScrollElement = (el) => {
+    el.classList.add("show");
+};
+
+// دالة تزيل الكلاس show (اختياري لو عايز تقدر تعمل scroll up)
+const hideScrollElement = (el) => {
+    el.classList.remove("show");
+};
+
+// الدالة الرئيسية اللي هتشتغل عند كل Scroll
+const handleScrollAnimation = () => {
+    scrollElements.forEach((el) => {
+        if (elementInView(el, 100)) { // يظهر قبل ما يوصل نص العنصر بمقدار 100px
+            displayScrollElement(el);
+        } else {
+            hideScrollElement(el);
+        }
+    });
+};
+
+// نضيف Event Listener للـ Scroll
+window.addEventListener("scroll", handleScrollAnimation);
+
+// اختياري: نفّذ أول مرة عشان العناصر اللي ظاهر أول الصفحة تظهر مباشرة
+handleScrollAnimation();

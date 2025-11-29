@@ -19,14 +19,14 @@
     <nav class="navbar">
         <div class="nav-container justify-content-between">
             <div class="nav-logo">
-                <img src="../img/logo.png" class="img-fluid mainlogo" alt="Logo">
+                <img src="../img/logo.png" class="img-fluid mainlogo" alt="Logo" onclick="window.location.href='../index.html'">
                 <span class="brand-text">EoH Security</span>
             </div>
     
             <div class="nav-menu" id="nav-menu">
                 <a href="../index.html" class="nav-link" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
                 <a href="assistant.html" class="nav-link" data-ar="المساعد الذكي" data-en="Smart Assistant">المساعد الذكي</a>
-                <a href="simulator.html" class="nav-link active" data-ar="اختبار محاكاة" data-en="Simulation Test">اختبار محاكاة</a>
+                <a href="simulator.html" class="nav-link active" data-ar="اختبار محاكاة" data-en="Phishing Simulator">اختبار محاكاة</a>
                 <a href="extension.html" class="nav-link" data-ar="تحميل إضافة المتصفح" data-en="Download Extension">تحميل إضافة المتصفح</a>
     
                 <div class="dropdown d-none d-lg-block">
@@ -87,7 +87,7 @@
         </div>
     </nav>
 
-    <main class="main-content">
+    <main class="main-content" >
         <section id="home" class="hero-section">
             <div class="container">
                 <div class="hero-content">
@@ -187,7 +187,7 @@
                 </h2>
                 <div class="row">
                     <div class="col-lg-4 col-md-12">
-                        <div class="card shadow-sm mb-3">
+                        <div class="card shadow-sm mb-3 scroll-element">
                             <div class="card-body rtl-text">
                                 <h6>نتائج سريعة</h6>
                                 <p>السؤال الحالي: <span id="qCount">0 / 20</span></p>
@@ -198,7 +198,7 @@
                             </div>
                         </div>
 
-                        <div class="card shadow-sm">
+                        <div class="card shadow-sm scroll-element">
                             <div class="card-body rtl-text">
                                 <h6>معلومات مساعدة</h6>
                                 <ul class="small">
@@ -210,7 +210,7 @@
                         </div>
                     </div>
                     <div class="col-lg-8 col-md-12 mb-4">
-                        <div class="card shadow-sm mb-3">
+                        <div class="card shadow-sm mb-3 scroll-element">
                             <div class="card-body">
                                 <h5 class="card-title">ابدأ الاختبار</h5>
                                 <p class="card-text small-hint">
@@ -218,7 +218,7 @@
                                     الهدف هو تدريب عينك على إشارات التحذير. الاختبار تعليمي فقط.
                                 </p>
 
-                                <div id="quiz-area" class="mt-3">
+                                <div id="quiz-area scroll-element" class="mt-3">
                                     <div id="intro" class="rtl-text">
                                         <p>اضغط على <strong>ابدأ</strong> لبدء الاختبار. لكل إجابة صحيحة تحصل على نقطة.</p>
                                         <div class="d-flex gap-2 flex-wrap">
@@ -285,8 +285,8 @@
                             </div>
                         </div>
 
-                        <div class="card shadow-sm">
-                            <div class="card-body text-center">
+                        <div class="card shadow-sm scroll-element">
+                            <div class="card-body text-center ">
                                 <h5>تحميل إضافة المتصفح</h5>
                                 <p>قم بتحميل اداة EoH Guard, وتصفح بلا قلق!</p>
                                 <div class="d-grid">
@@ -301,12 +301,12 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer scroll-element">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
+            <div class="footer-content scroll-element">
+                <div class="footer-section scroll-element">
                     <div class="footer-logo">
-                        <img src="../img/logo.png" class="img-fluid footerlogo" alt="Logo">
+                        <img src="../img/logo.png" class="img-fluid footerlogo" alt="Logo" onclick="window.location.href='../index.html'">
                         <span data-ar="Eye of Horus Security" data-en="Eye of Horus Security">Eye of Horus Security</span>
                     </div>
                     <p class="footer-description" data-ar="نحن نعمل على توعية المستخدمين وحمايتهم من التهديدات الرقمية ومحاولات التصيد الإلكتروني." data-en="We work to educate and protect users from digital threats and phishing attempts.">نحن نعمل على توعية المستخدمين وحمايتهم من التهديدات الرقمية ومحاولات التصيد الإلكتروني.</p>
@@ -315,8 +315,8 @@
                     <h4 class="footer-title" data-ar="روابط مفيدة" data-en="Useful Links">روابط مفيدة</h4>
                     <ul class="footer-links">
                         <li><a href="../index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
-                        <li><a href="simulator.html" data-ar="اختبار المحاكاة" data-en="Phishing Simulator">اختبار المحاكاة</a></li>
                         <li><a href="assistant.html" data-ar="المساعد الذكي" data-en="Smart Assistant">المساعد الذكي</a></li>
+                        <li><a href="simulator.html" data-ar="اختبار المحاكاة" data-en="Phishing Simulator">اختبار المحاكاة</a></li>
                         <li><a href="extension.html" data-ar="إضافة المتصفح" data-en="Browser Extension">إضافة المتصفح</a></li>
                         <li><a href="report.html" data-ar="الإبلاغ عن موقع" data-en="Report Site">الإبلاغ عن موقع</a></li>
                         <li><a href="blog.html" data-ar="المدونة" data-en="Blog">المدونة</a></li>
