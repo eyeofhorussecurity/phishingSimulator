@@ -16,43 +16,36 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-       <nav class="navbar">
+    <nav class="navbar">
         <div class="nav-container justify-content-between">
             <div class="nav-logo">
-                <img src="../img/logo.png" class="img-fluid mainlogo" alt="Logo">
+                <img src="../img/logo.png" class="img-fluid mainlogo" alt="Logo" onclick="window.location.href='../index.html'">
                 <span class="brand-text">EoH Security</span>
             </div>
     
             <div class="nav-menu" id="nav-menu">
                 <a href="../index.html" class="nav-link" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
-                <a href="assistant.html" class="nav-link" data-ar="المساعد الذكي" data-en="Smart Assistant">المساعد
-                    الذكي</a>
-                <a href="simulator.html" class="nav-link" data-ar="اختبار محاكاة" data-en="Simulation Test">اختبار
-                    محاكاة</a>
-                <a href="#downloadExtension" class="nav-link" data-ar="تحميل إضافة المتصفح"
-                    data-en="Download Extension">تحميل إضافة المتصفح</a>
+                <a href="assistant.html" class="nav-link" data-ar="المساعد الذكي" data-en="Smart Assistant">المساعد الذكي</a>
+                <a href="simulator.html" class="nav-link" data-ar="اختبار محاكاة" data-en="Phishing Simulator">اختبار محاكاة</a>
+                <a href="extension.html" class="nav-link" data-ar="تحميل إضافة المتصفح" data-en="Download Extension">تحميل إضافة المتصفح</a>
     
                 <div class="dropdown d-none d-lg-block">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" role="button"
+                    <a class="nav-link dropdown-toggle active" href="#" id="dropdownMenuLink" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         <span class="dropdown-text" data-ar="المزيد" data-en="More">المزيد</span>  <i
                             class="fas fa-chevron-down"></i>
                     </a>
                     <ul class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
-                        <li><a href="report.html" class="dropdown-item" data-ar="الإبلاغ عن موقع"
-                                data-en="Report Site">الإبلاغ عن موقع</a></li>
-                        <li><a href="pages/blog.html" class="dropdown-item active" data-ar="المدونة" data-en="Blog">المدونة</a>
-                        </li>
-                        <li><a href="#blog" class="dropdown-item" data-ar="تابعنا" data-en="Follow Us">تابعنا</a>
-                        </li>
+                        <li><a href="report.html" class="dropdown-item" data-ar="الإبلاغ عن موقع" data-en="Report Site">الإبلاغ عن موقع</a></li>
+                        <li><a href="blog.html" class="dropdown-item active" data-ar="المدونة" data-en="Blog">المدونة</a></li>
+                        <li><a href="https://www.facebook.com/eyeofhorussec" class="dropdown-item" data-ar="تابعنا" data-en="Follow Us">تابعنا</a></li>
                     </ul>
                 </div>
     
                 <div class="mobile-more d-lg-none text-center">
-                    <a href="report.html" class="nav-link text-center" data-ar="الإبلاغ عن موقع" data-en="Report Site">الإبلاغ عن
-                        موقع</a>
-                    <a href="#blog" class="nav-link text-center" data-ar="المدونة" data-en="Blog">المدونة</a>
-                    <a href="#" class="nav-link text-center" data-ar="تابعنا" data-en="Follow Us">تابعنا</a>
+                    <a href="report.html" class="nav-link text-center" data-ar="الإبلاغ عن موقع" data-en="Report Site">الإبلاغ عن موقع</a>
+                    <a href="blog.html" class="nav-link text-center" data-ar="المدونة" data-en="Blog">المدونة</a>
+                    <a href="https://www.facebook.com/eyeofhorussec" class="nav-link text-center" data-ar="تابعنا" data-en="Follow Us">تابعنا</a>
                 </div>
     
                 <div class="nav-controls-mobile d-lg-none mt-3">
@@ -110,11 +103,11 @@
             </div>
         </section>
 
-        <section class="main-section">
+        <section class="main-section mt-4">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-12 mb-4">
-                            <div class="card shadow-sm" style="top: 90px;">
+                            <div class="card shadow-sm" >
                                 <div class="card-body">
                                 <h5 class="card-title" style="display:flex; align-items:center; gap:15px;">
                                     شارك تجربتك
@@ -240,7 +233,7 @@
                                     </p>
                                     
                                     <div class="bg-light p-3 rounded mb-3">
-                                        <small class="text-muted">نص الرسالة المشبوهة:</small>
+                                        <small class="text-black">نص الرسالة المشبوهة:</small>
                                         <p class="mb-0 mt-1">"عزيزي العميل، خطك سيتم إيقافه خلال 24 ساعة. اضغط على الرابط لتحديث بياناتك: [رابط مشبوه]"</p>
                                     </div>
                                     
@@ -316,45 +309,40 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
+            <div class="footer-content scroll-element">
+                <div class="footer-section scroll-element">
                     <div class="footer-logo">
-                        <img src="../img/logo.png" class="img-fluid footerlogo" alt="Logo">
-                        <span>Eye of Horus Security</span>
+                        <img src="../img/logo.png" class="img-fluid footerlogo" alt="Logo" onclick="window.location.href='../index.html'">
+                        <span data-ar="Eye of Horus Security" data-en="Eye of Horus Security">Eye of Horus Security</span>
                     </div>
-                    <p class="footer-description">
-                        نحن نعمل على توعية المستخدمين وحمايتهم من التهديدات الرقمية 
-                        ومحاولات التصيد الإلكتروني.
-                    </p>
+                    <p class="footer-description" data-ar="نحن نعمل على توعية المستخدمين وحمايتهم من التهديدات الرقمية ومحاولات التصيد الإلكتروني." data-en="We work to educate and protect users from digital threats and phishing attempts.">نحن نعمل على توعية المستخدمين وحمايتهم من التهديدات الرقمية ومحاولات التصيد الإلكتروني.</p>
                 </div>
-                
                 <div class="footer-section">
-                    <h4 class="footer-title">روابط مفيدة</h4>
+                    <h4 class="footer-title" data-ar="روابط مفيدة" data-en="Useful Links">روابط مفيدة</h4>
                     <ul class="footer-links">
-                        <li><a href="../index.html">الرئيسية</a></li>
-                        <li><a href="assistant.html">المساعد الذكي</a></li>
-                        <li><a href="simulator.html">اختبار محاكاة</a></li>
-                        <li><a href="extension.html">إضافة المتصفح</a></li>
-                        <li><a href="report.html">الإبلاغ عن موقع</a></li>
-                        <li><a href="#">المدونة</a></li>
+                        <li><a href="../index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                        <li><a href="assistant.html" data-ar="المساعد الذكي" data-en="Smart Assistant">المساعد الذكي</a></li>
+                        <li><a href="simulator.html" data-ar="اختبار المحاكاة" data-en="Phishing Simulator">اختبار المحاكاة</a></li>
+                        <li><a href="extension.html" data-ar="إضافة المتصفح" data-en="Browser Extension">إضافة المتصفح</a></li>
+                        <li><a href="report.html" data-ar="الإبلاغ عن موقع" data-en="Report Site">الإبلاغ عن موقع</a></li>
+                        <li><a href="blog.html" data-ar="المدونة" data-en="Blog">المدونة</a></li>
                     </ul>
                 </div>
-                
                 <div class="footer-section">
-                    <h4 class="footer-title">تواصل معنا</h4>
+                    <h4 class="footer-title" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h4>
                     <div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.facebook.com/people/Eye-of-Horus-Security/61583397752654/" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/eyeofhorussec" class="social-link"><i class="fab fa-facebook"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
-            
             <div class="footer-bottom">
-                <p>&copy; 2024 Eye of Horus Team. جميع الحقوق محفوظة.</p>
+                <p data-ar="&copy; 2025 Eye of Horus Team. جميع الحقوق محفوظة." data-en="&copy; 2025 Eye of Horus Team. All rights reserved.">&copy; 2025 Eye of Horus Team. جميع الحقوق محفوظة.</p>
             </div>
         </div>
     </footer>
