@@ -18,8 +18,8 @@
 <body>
     <nav class="navbar">
         <div class="nav-container justify-content-between">
-            <div class="nav-logo">
-                <img src="../img/logo.png" class="img-fluid mainlogo" alt="Logo" onclick="window.location.href='../index.html'">
+            <div class="nav-logo" onclick="window.location.href='../index.html'">
+                <img src="../img/logo.png" class="img-fluid mainlogo" alt="Logo">
                 <span class="brand-text">EoH Security</span>
             </div>
     
@@ -347,8 +347,8 @@
         <div class="container">
             <div class="footer-content scroll-element">
                 <div class="footer-section scroll-element">
-                    <div class="footer-logo">
-                        <img src="../img/logo.png" class="img-fluid footerlogo" alt="Logo" onclick="window.location.href='../index.html'">
+                    <div class="footer-logo" onclick="window.location.href='../index.html'">
+                        <img src="../img/1000392949.gif" class="img-fluid footerlogo" alt="Logo">
                         <span data-ar="Eye of Horus Security" data-en="Eye of Horus Security">Eye of Horus Security</span>
                     </div>
                     <p class="footer-description" data-ar="نحن نعمل على توعية المستخدمين وحمايتهم من التهديدات الرقمية ومحاولات التصيد الإلكتروني." data-en="We work to educate and protect users from digital threats and phishing attempts.">نحن نعمل على توعية المستخدمين وحمايتهم من التهديدات الرقمية ومحاولات التصيد الإلكتروني.</p>
@@ -381,63 +381,8 @@
     </footer>
 
     <script src="../js/script.js"></script>
+    <script src="../js/report.js"></script>
+    <script src="js/animate-on-scroll.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.getElementById('reportForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const threatType = document.getElementById('threatType').value;
-            const description = document.getElementById('reportDescription').value;
-            const consent = document.getElementById('consentCheck').checked;
-            
-            if (threatType && description && consent) {
-                document.getElementById('reportSuccess').style.display = 'block';
-                
-                this.reset();
-                
-                document.getElementById('reportSuccess').scrollIntoView({ 
-                    behavior: 'smooth', 
-                    block: 'center' 
-                });
-                
-                setTimeout(() => {
-                    document.getElementById('reportSuccess').style.display = 'none';
-                }, 10000);
-            }
-        });
-        
-        document.getElementById('evidenceFiles').addEventListener('change', function(e) {
-            const files = e.target.files;
-            const maxFiles = 5;
-        
-            
-            if (files.length > maxFiles) {
-                alert(`يمكنك إرفاق حتى ${maxFiles} ملفات فقط`);
-                this.value = '';
-                return;
-            }
-            
-            for (let file of files) {
-                if (file.size > maxSize) {
-                    alert(`حجم الملف ${file.name} كبير جداً. الحد الأقصى 10 ميجا`);
-                    this.value = '';
-                    return;
-                }
-            }
-        });
-        
-        document.getElementById('threatType').addEventListener('change', function() {
-            const impactLevel = document.getElementById('impactLevel');
-            const value = this.value;
-            
-            if (value === 'phishing-website' || value === 'fake-app') {
-                impactLevel.value = 'high';
-            } else if (value === 'fake-email' || value === 'sms-scam') {
-                impactLevel.value = 'medium';
-            } else if (value === 'social-scam') {
-                impactLevel.value = 'low';
-            }
-        });
-    </script>
 </body>
 </html>

@@ -893,8 +893,51 @@ const handleScrollAnimation = () => {
     });
 };
 
+
+
+
 // نضيف Event Listener للـ Scroll
 window.addEventListener("scroll", handleScrollAnimation);
 
 // اختياري: نفّذ أول مرة عشان العناصر اللي ظاهر أول الصفحة تظهر مباشرة
 handleScrollAnimation();
+
+
+// Counter Animation
+const counters = document.querySelectorAll('.stat-number');
+let started = false;
+function animateCounter(el) {
+    const originalText = el.textContent.trim();
+
+    // Extract number only
+    const target = parseInt(originalText.replace(/\D/g, ''), 10);
+
+    // Extract prefix & suffix (like "+", "%", "minutes")
+    const prefix = originalText.match(/^\D+/)?.[0] || "";
+    const suffix = originalText.match(/\D+$/)?.[0] || "";
+
+    let current = 0;
+    const speed = target / 60;
+
+    const update = () => {
+        current += speed;
+
+        if (current < target) {
+            el.textContent = prefix + Math.floor(current).toLocaleString() + suffix;
+            requestAnimationFrame(update);
+        } else {
+            el.textContent = prefix + target.toLocaleString() + suffix;
+        }
+    };
+
+    el.style.opacity = 1;
+    update();
+}
+const observer = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting && !started) {
+        counters.forEach(c => animateCounter(c));
+        started = true;
+    }
+});
+const statsSection = document.querySelector('.hero-stats');
+observer.observe(statsSection);
