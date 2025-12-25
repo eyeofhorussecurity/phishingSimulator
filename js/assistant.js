@@ -6,7 +6,7 @@ const chatMessages = document.getElementById('chatMessages');
 const fileInput = document.getElementById('fileInput');
 const filePreview = document.getElementById('filePreview');
 const typingIndicator = document.getElementById('typingIndicator');
-
+typingIndicator.style.display = 'none';
 messageInput.addEventListener('input', function () {
     this.style.height = 'auto';
     this.style.height = Math.min(this.scrollHeight, 100) + 'px';
@@ -56,7 +56,39 @@ function sendQuickMessage(message) {
     messageInput.value = message;
     sendMessage();
 }
+function showTypingIndicator() {
+    typingIndicator.style.display = 'flex';
+}
 
+function hideTypingIndicator() {
+    typingIndicator.style.display = 'none';
+}
+
+function sendAnimation() {
+  const btn = document.querySelector('.send-btn');
+  const icon = btn.querySelector('i');
+
+  btn.classList.add('fly');
+
+  // particles
+  for (let i = 0; i < 8; i++) {
+    const p = document.createElement('span');
+    p.classList.add('particle');
+
+    p.style.setProperty('--x', `${Math.random() * 60 - 30}px`);
+    p.style.setProperty('--y', `${Math.random() * 60 - 30}px`);
+
+    btn.appendChild(p);
+
+    setTimeout(() => p.remove(), 600);
+  }
+
+  setTimeout(() => {
+    btn.classList.remove('fly');
+    icon.style.opacity = 1;
+    icon.style.transform = 'none';
+  }, 900);
+}
 function sendMessage() {
     const message = messageInput.value.trim();
     const contentType = document.getElementById('contentType').value;
