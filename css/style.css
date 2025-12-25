@@ -28,6 +28,7 @@ body {
   direction: rtl;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+html {scrollbar-color: var(--accent-color) var(--bg-primary);}
 body.dark-mode .bg-light{
   color: black !important;
 }
@@ -73,7 +74,6 @@ body.dark-mode .bg-light{
   --link: rgb(27, 129, 112);
   --link-hover: rgb(24, 94, 82);
 }
-
 .switch-label {
   position: absolute;
   width: 100%;
@@ -204,7 +204,9 @@ body.dark-mode .bg-light{
 .nav-controls-mobile .dropdown-theme-switch {
   justify-content: flex-start;
 }
-
+.nav-link:focus, .nav-link-active:focus{
+  outline: none;
+}
 .dropdown .dropdown-theme-switch .dropdown-toggle-switch {
   margin-inline-start: 8px;
 }
@@ -289,7 +291,6 @@ body.dark-mode .bg-light{
   padding: 5px !important;
   border-radius: 20px !important;
 }
-
 .lang-btn {
   background: transparent !important;
   border: none !important;
@@ -302,6 +303,7 @@ body.dark-mode .bg-light{
   transition: all 0.3s ease !important;
 }
 
+.lang-btn:focus {outline: none !important;}
 .lang-btn.active {
   background: rgba(255, 255, 255, 0.3) !important;
 }
@@ -1018,7 +1020,7 @@ body.dark-mode .card-title {
 }
 
 .tips-section {
-  padding: 80px 0 !important;
+  padding: 60px 0 !important;
   background-color: var(--bg-primary) !important;
   animation: fadeIn 1s ease-in-out !important;
   transition: background-color 0.3s ease !important;
@@ -1550,7 +1552,9 @@ body.dark-mode .dropdown-menu {
   font-size: 18px;
   flex-shrink: 0;
 }
-
+.message-avatar:first-child{
+  background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+}
 .message.bot .message-avatar {
   background: linear-gradient(135deg, #3b82f6, #1e3a8a);
   color: white;
@@ -1578,6 +1582,9 @@ body.dark-mode .dropdown-menu {
 .message.user .message-content {
   background: linear-gradient(135deg, #3b82f6, #1e3a8a);
   color: white;
+}
+#typingIndicator {
+  display: none;
 }
 
 .chat-input-area {
@@ -1714,12 +1721,46 @@ body.dark-mode .message-input {
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s ease;
+   overflow: hidden;
 }
 
+
+
+
+.send-btn:focus,
+.send-btn:active {
+  outline: none;
+}
 .send-btn:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 }
+
+.send-btn.fly i {
+  animation: fly 0.8s ease-in-out forwards;
+}
+
+@keyframes fly {
+  0% {
+    transform: translate(0, 0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(120px, -120px) rotate(25deg);
+    opacity: 0;
+  }
+}
+@keyframes particle {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: translate(var(--x), var(--y)) scale(0);
+    opacity: 0;
+  }
+}
+
 
 .attachment-btn {
   width: 45px;
@@ -1734,7 +1775,9 @@ body.dark-mode .message-input {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
+.attachment-btn:focus{
+  outline: none;
+}
 .attachment-btn:hover {
   background: #f3f4f6;
   color: #3b82f6;
@@ -2024,6 +2067,63 @@ body.dark-mode .message-input {
 
 .fade-only {
   transform: none;
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.accordion {
+  width: 1200px;
+  height: auto;
+  margin-top: 60px !important;
+}
+
+.accordion-item{
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+body.dark-mode .accordion-item {
+  background: #1e1e1e;
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+}
+
+
+.accordion-header:focus-visible {
+  outline: none;
+}
+.accordion-header {
+  width: 100%;
+  padding: 18px 20px;
+  background: #f5f5f5;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  cursor: pointer;
+}
+
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 20px;
+}
+
+.accordion-content p {
+  padding: 15px 0;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
 }
 
 .tips-grid-timeline {
@@ -2825,6 +2925,13 @@ body.dark-mode .tip-timeline i {
     opacity: 0;
     transform: translateY(50px);
     transition: all 0.6s ease-out; 
+}
+
+.btn-group{
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+    gap: 0.5rem;
 }
 
 .scroll-element.show {
