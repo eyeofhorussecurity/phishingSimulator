@@ -22,7 +22,7 @@ body.dark-mode {
   --border-color: #334155;
   --navbar-bg: #000a2291;
   background-color: var(--background);
-  background-image: radial-gradient(circle at 50% 10%, rgba(17, 0, 255, 0.26) 0%, transparent 35%),
+  background-image: radial-gradient(circle at 50% 10%, rgba(17, 0, 255, 0.308) 0%, transparent 20%),
     linear-gradient(to right, rgba(255, 255, 255, 0.089) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.089) 1px, transparent 1px);
   background-size: 100% 100%, 40px 40px, 40px 40px;
@@ -946,17 +946,12 @@ body.dark-mode .card-title {
     #d1d5db 63%
   );
   background-size: 300% 100%;
-  animation: shimmer 1.3s linear infinite;
 }
 
 .browser-lines span:nth-child(1) { width: 90%; }
 .browser-lines span:nth-child(2) { width: 75%; }
 .browser-lines span:nth-child(3) { width: 60%; }
 
-@keyframes shimmer {
-  0% { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
-}
 
 .simulator.btn.container{
   display: flex;
@@ -2149,6 +2144,7 @@ body.dark-mode .message-input {
       justify-content: center !important;
       align-content: center !important; 
   }
+  
 }
 .features-grid {
     display: grid !important;
