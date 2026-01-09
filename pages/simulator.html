@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Of Horus Security</title>
+    
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="../img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container justify-content-between">
+            <div class="nav-logo" onclick="window.location.href='../index.html'">
+                <img src="../img/logo.png" class="img-fluid mainlogo" alt="Logo">
+                <span class="brand-text">EoH Security</span>
+            </div>
+    
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                <a href="assistant.html" class="nav-link" data-ar="المساعد الذكي" data-en="Horus Assistant">المساعد الذكي</a>
+                <a href="simulator.html" class="nav-link active" data-ar="اختبار المحاكاة" data-en="Phishing Simulator">اختبار المحاكاة</a>
+                <a href="extension.html" class="nav-link" data-ar="إضافة المتصفح" data-en="Browser Extension">إضافة المتصفح</a>
+    
+                <div class="dropdown d-none d-lg-block">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="dropdown-text" data-ar="المزيد &ensp;" data-en="More &ensp;">المزيد&ensp;</span> <i
+                            class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
+                        <li><a href="report.html" class="dropdown-item" data-ar="الإبلاغ عن موقع" data-en="Report Site">الإبلاغ عن موقع</a></li>
+                        <li><a href="blog.html" class="dropdown-item" data-ar="المدونة" data-en="Blog">المدونة</a></li>
+                        <li><a href="https://www.facebook.com/eyeofhorussec" class="dropdown-item" data-ar="تابعنا" data-en="Follow Us">تابعنا</a></li>
+                    </ul>
+                </div>
+    
+                <div class="mobile-more d-lg-none text-center">
+                    <a href="report.html" class="nav-link text-center" data-ar="الإبلاغ عن موقع" data-en="Report Site">الإبلاغ عن موقع</a>
+                    <a href="blog.html" class="nav-link text-center" data-ar="المدونة" data-en="Blog">المدونة</a>
+                    <a href="https://www.facebook.com/eyeofhorussec" class="nav-link text-center" data-ar="تابعنا" data-en="Follow Us">تابعنا</a>
+                </div>
+    
+                <div class="nav-controls-mobile d-lg-none mt-3">
+                    <div class="dropdown-theme-switch">
+                        <div class="dropdown-toggle-switch">
+                            <label class="dropdown-switch-label">
+                                <input type="checkbox" class="dropdown-checkbox" id="themeToggleMobile">
+                                <span class="dropdown-slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="dropdown-lang-switch mt-2">
+                        <button class="lang-btn active" data-lang="ar" data-ar="العربية" data-en="Arabic">العربية</button>
+                        <button class="lang-btn" data-lang="en" data-ar="English" data-en="English">English</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="nav-controls d-none d-lg-flex" id="nav-controls">
+                <div class="nav-switch">
+                    <div class="toggle-switch">
+                        <label class="switch-label">
+                            <input type="checkbox" class="checkbox" id="themeToggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="nav-language">
+                    <button class="lang-btn active" data-lang="ar">العربية</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+            </div>
+    
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+<main class="main-content" >
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+    <h1 class="hero-title">
+        <i class="fas fa-bug"></i>
+        <span data-ar="اختبار محاكاة التصيد الإلكتروني"
+              data-en="Phishing Simulation Test">
+            اختبار محاكاة التصيد الإلكتروني
+        </span>
+    </h1>
+                    <p class="hero-description" data-ar="تعلم كيفية حماية نفسك من محاولات التصيد الإلكتروني والاحتيال الرقمي. هذا الاختبار سيساعدك على التعرف على التهديدات الشائعة وكيفية تجنبها." data-en="Learn how to protect yourself from phishing attempts and digital fraud. This test will help you recognize common threats and how to avoid them.">
+                        تعلم كيفية حماية نفسك من محاولات التصيد الإلكتروني والاحتيال الرقمي. 
+                        هذا الاختبار سيساعدك على التعرف على التهديدات الشائعة وكيفية تجنبها.
+                    </p>
+                    
+                </div>
+            </div>
+        </section>
+ <section class="tips-section">
+            <div class="container">
+                <h2 class="section-title">
+    <i class="fas fa-lightbulb"></i>
+    <span data-ar="ملاحظات هامة للحماية" data-en="Important Security Tips">
+        ملاحظات هامة للحماية
+    </span>
+</h2>
+
+                
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <h3 class="tip-title" data-ar="تحقق من الروابط" data-en="Check Links">تحقق من الروابط</h3>
+                        <p class="tip-description" data-ar="لا تضغط على الروابط المشبوهة في الرسائل الإلكترونية أو الرسائل النصية. تحقق من عنوان الرابط قبل النقر عليه." data-en="Don't click on suspicious links in emails or text messages. Check the link address before clicking on it.">
+                            لا تضغط على الروابط المشبوهة في الرسائل الإلكترونية أو الرسائل النصية. 
+                            تحقق من عنوان الرابط قبل النقر عليه.
+                        </p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3 class="tip-title" data-ar="تأكد من عنوان الموقع" data-en="Verify Website Address">تأكد من عنوان الموقع</h3>
+                        <p class="tip-description" data-ar="تحقق من عنوان الموقع في شريط العناوين وتأكد من وجود رمز القفل (HTTPS) قبل إدخال أي بيانات شخصية." data-en="Check the website address in the address bar and make sure there is a lock icon (HTTPS) before entering any personal data.">
+                            تحقق من عنوان الموقع في شريط العناوين وتأكد من وجود رمز القفل (HTTPS) 
+                            قبل إدخال أي بيانات شخصية.
+                        </p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="tip-title" data-ar="المصادقة الثنائية" data-en="Two-Factor Authentication">المصادقة الثنائية</h3>
+                        <p class="tip-description" data-ar="استخدم المصادقة الثنائية (2FA) في جميع حساباتك المهمة لإضافة طبقة حماية إضافية ضد المتسللين." data-en="Use two-factor authentication (2FA) on all your important accounts to add an extra layer of protection against hackers.">
+                            استخدم المصادقة الثنائية (2FA) في جميع حساباتك المهمة لإضافة طبقة 
+                            حماية إضافية ضد المتسللين.
+                        </p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3 class="tip-title" data-ar="كن حذراً من المعلومات الشخصية" data-en="Be Careful with Personal Information">كن حذراً من المعلومات الشخصية</h3>
+                        <p class="tip-description" data-ar="لا تشارك معلوماتك الشخصية أو المالية عبر البريد الإلكتروني أو المواقع غير الموثوقة." data-en="Don't share your personal or financial information via email or untrusted websites.">
+                            لا تشارك معلوماتك الشخصية أو المالية عبر البريد الإلكتروني أو 
+                            المواقع غير الموثوقة.
+                        </p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <h3 class="tip-title" data-ar="تحديث البرامج" data-en="Update Software">تحديث البرامج</h3>
+                        <p class="tip-description" data-ar="حافظ على تحديث نظام التشغيل والبرامج باستمرار للحصول على أحدث تصحيحات الأمان." data-en="Keep your operating system and software constantly updated to get the latest security patches.">
+                            حافظ على تحديث نظام التشغيل والبرامج باستمرار للحصول على 
+                            أحدث تصحيحات الأمان.
+                        </p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3 class="tip-title" data-ar="الإبلاغ عن المحتوى المشبوه" data-en="Report Suspicious Content">الإبلاغ عن المحتوى المشبوه</h3>
+                        <p class="tip-description" data-ar="إذا واجهت محتوى مشبوهاً أو محاولة تصيد، قم بالإبلاغ عنها للجهات المختصة فوراً." data-en="If you encounter suspicious content or phishing attempt, report it to the authorities immediately.">
+                            إذا واجهت محتوى مشبوهاً أو محاولة تصيد، قم بالإبلاغ عنها 
+                            للجهات المختصة فوراً.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-section">
+            <div class="container">
+                <h2 class="section-title" style="padding: 20px;" data-ar="اختبر معرفتك بالأمان الرقمي" data-en="Test Your Digital Security Knowledge">
+                  <i class="fas fa-question-circle"></i>
+                  اختبر معرفتك بالأمان الرقمي
+                </h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card shadow-sm mb-3 scroll-element">
+                            <div class="card-body rtl-text">
+                                <h6 data-ar="نتائج سريعة" data-en="Quick Results">نتائج سريعة</h6>
+                                <p data-ar="السؤال الحالي:" data-en="Current Question:">السؤال الحالي: <span id="qCount">0 / 20</span></p>
+                                <p data-ar="النقاط:" data-en="Score:">النقاط: <strong id="scoreShort">0</strong></p>
+                                <hr/>
+                                <h6 data-ar="ملاحظات بعد كل سؤال" data-en="Notes After Each Question">ملاحظات بعد كل سؤال</h6>
+                                <div id="noteArea" class="small text-muted"></div>
+                            </div>
+                        </div>
+
+                        <div class="card shadow-sm scroll-element">
+                            <div class="card-body rtl-text">
+                                <h6 data-ar="معلومات مساعدة" data-en="Helpful Information">معلومات مساعدة</h6>
+                                <ul class="small">
+                                    <li data-ar="ابحث عن اختلافات في النطاق (domain) أو أحرف غريبة." data-en="Look for differences in the domain or strange characters.">ابحث عن اختلافات في النطاق (domain) أو أحرف غريبة.</li>
+                                    <li data-ar="تحقق من وجود قفل الأمان في المتصفح لكن لا تعتمد عليه وحده." data-en="Check for the security lock in the browser but don't rely on it alone.">تحقق من وجود قفل الأمان في المتصفح لكن لا تعتمد عليه وحده.</li>
+                                    <li data-ar="لا تُدخل بيانات حساسة إن لم تكن متأكداً من المصدر." data-en="Don't enter sensitive data if you're not sure of the source.">لا تُدخل بيانات حساسة إن لم تكن متأكداً من المصدر.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 mb-4">
+                        <div class="card shadow-sm mb-3 scroll-element">
+                            <div class="card-body">
+                                <h5 class="card-title" data-ar="ابدأ الاختبار" data-en="Start the Test">ابدأ الاختبار</h5>
+                                <p class="card-text small-hint" data-ar="سيعرض لك الموقع 20 مثال عشوائي من مجموعة كبيرة من مواقع التصيد باللغة العربية والإنجليزية. عليك أن تختار إن كانت هذه الصفحة تصيّداً أم حقيقية. الهدف هو تدريب عينك على إشارات التحذير. الاختبار تعليمي فقط." data-en="The site will show you 20 random examples from a large collection of phishing sites in Arabic and English. You have to choose whether this page is phishing or legitimate. The goal is to train your eye on warning signs. The test is educational only.">
+                                    سيعرض لك الموقع 20 مثال عشوائي من مجموعة كبيرة من مواقع التصيد باللغة العربية والإنجليزية. عليك أن تختار إن كانت هذه الصفحة <strong>تصيّداً</strong> أم <strong>حقيقية</strong>.
+                                    الهدف هو تدريب عينك على إشارات التحذير. الاختبار تعليمي فقط.
+                                </p>
+
+                                <div id="quiz-area scroll-element" class="mt-3">
+                                    <div id="intro" class="rtl-text">
+                                        <p data-ar="اضغط على ابدأ لبدء الاختبار. لكل إجابة صحيحة تحصل على نقطة." data-en="Click Start to begin the test. You get one point for each correct answer.">اضغط على <strong>ابدأ</strong> لبدء الاختبار. لكل إجابة صحيحة تحصل على نقطة.</p>
+                                        <div class="d-flex gap-2 flex-wrap">
+                                            <button id="btnStart" class="btn btn-primary" data-ar="ابدأ" data-en="Start">ابدأ</button>
+                                            <button id="btnShowRules" class="btn btn-outline-secondary" data-ar="قواعد سريعة" data-en="Quick Rules">قواعد سريعة</button>
+                                        </div>
+                                    </div>
+
+                                    <div id="rules" class="mt-3" style="display:none;">
+                                        <div class="alert alert-info rtl-text">
+                                            <strong data-ar="قواعد سريعة للتعلّم:" data-en="Quick Learning Rules:">قواعد سريعة للتعلّم:</strong>
+                                            <ul class="mb-2">
+                                                <li data-ar="تحقق دائماً من عنوان الويب (الرابط) وصيغة بروتوكول الحماية (https)." data-en="Always check the web address (link) and the security protocol format (https).">تحقق دائماً من عنوان الويب (الرابط) وصيغة بروتوكول الحماية (https).</li>
+                                                <li data-ar="انظر لوجود أخطاء إملائية أو شعارات غير متطابقة أو تصميم رديء." data-en="Look for spelling errors, mismatched logos, or poor design.">انظر لوجود أخطاء إملائية أو شعارات غير متطابقة أو تصميم رديء.</li>
+                                                <li data-ar="توخَّ الحذر من طلبات المعلومات الحساسة أو الضغط على روابط داخل رسائل بريد غير متوقعة." data-en="Be careful of requests for sensitive information or clicking links in unexpected emails.">توخَّ الحذر من طلبات المعلومات الحساسة أو الضغط على روابط داخل رسائل بريد غير متوقعة.</li>
+                                            </ul>
+                                            <div class="alert alert-warning mb-0">
+                                                <strong data-ar="تحذير مهم:" data-en="Important Warning:">تحذير مهم:</strong> <span data-ar="ليس كل موقع يظهر بقفل الأمان (HTTPS) آمن تماماً! المحتالون يمكنهم شراء شهادات أمان صالحة لمواقع مزيفة." data-en="Not every site that shows a security lock (HTTPS) is completely safe! Scammers can buy valid security certificates for fake sites.">ليس كل موقع يظهر بقفل الأمان (HTTPS) آمن تماماً! المحتالون يمكنهم شراء شهادات أمان صالحة لمواقع مزيفة.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="question-card" style="display:none;" class="mt-3">
+                                        <div class="mb-2 d-flex justify-content-between align-items-center flex-wrap">
+                                            <div><strong id="qIndex" data-ar="السؤال" data-en="Question">السؤال 1</strong></div>
+                                            <div><span id="scoreBadge" class="badge bg-success result-badge" data-ar="النتيجة:" data-en="Score:">النتيجة: 0</span></div>
+                                        </div>
+
+                                        <div class="mb-3 p-0 frame-card">
+                                            <div class="mb-2 rtl-text"><strong id="siteTitle" data-ar="عنوان الموقع" data-en="Website Title">عنوان الموقع</strong></div>
+                                            <div class="mb-2 rtl-text"><em id="scenario" class="text-muted" data-ar="السيناريو..." data-en="Scenario...">السيناريو...</em></div>
+                                            <div id="url-bar" class="url-bar">
+                                                <span id="url-display">https://example.com</span>
+                                                <span id="security-icon">🔒</span>
+                                            </div>
+                                            <div id="screenshot" class="screenshot mb-3" aria-hidden="true"></div>
+                                            <div class="d-flex gap-2 mb-2 flex-wrap">
+                                                <button id="btnPhish" class="btn btn-danger btn-quiz" data-ar="تصيّد (مزيف)" data-en="Phishing (Fake)">تصيّد (مزيف)</button>
+                                                <button id="btnLegit" class="btn btn-outline-primary btn-quiz" data-ar="حقيقي" data-en="Legitimate">حقيقي</button>
+                                                <button id="btnExplain" class="btn btn-outline-secondary" data-ar="شرح" data-en="Explain">شرح</button>
+                                            </div>
+                                            <div id="feedback" class="mt-2" style="display:none;"></div>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex justify-content-between flex-wrap gap-2">
+                                            <div class="d-flex gap-2 flex-wrap">
+                                                <button id="btnNext" class="btn btn-primary" data-ar="التالي" data-en="Next">التالي</button>
+                                                <button id="btnSkip" class="btn btn-outline-warning" data-ar="تخطي" data-en="Skip">تخطي</button>
+                                            </div>
+                                            <button id="btnPrev" class="btn btn-light" data-ar="السابق" data-en="Previous">السابق</button>
+                                        </div>
+                                    </div>
+
+                                    <div id="final-card" style="display:none;" class="mt-3">
+                                        <div class="card text-center">
+                                            <div class="card-body">
+                                                <h3 id="finalScore" data-ar="النهاية" data-en="The End">النهاية</h3>
+                                                <p id="finalText"></p>
+                                                <button id="btnRestart" class="btn btn-success" data-ar="إعادة الاختبار" data-en="Restart Test">إعادة الاختبار</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card shadow-sm scroll-element">
+                            <div class="card-body text-center ">
+                                <h5 data-ar="تحميل إضافة المتصفح" data-en="Download Browser Extension">تحميل إضافة المتصفح</h5>
+                                <p data-ar="قم بتحميل اداة EoH Guard, وتصفح بلا قلق!" data-en="Download EoH Guard tool and browse worry-free!">قم بتحميل اداة EoH Guard, وتصفح بلا قلق!</p>
+                                <div class="d-grid">
+                                    <a href="extension.html"><button class="btn btn-primary" data-ar="تحميل الأن" data-en="Download Now">تحميل الأن  <i class="fi fi-br-download ms-1"></i></button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer scroll-element">
+        <div class="container">
+            <div class="footer-content scroll-element">
+                <div class="footer-section scroll-element">
+                    <div class="footer-logo" onclick="window.location.href='../index.html'">
+                        <img src="../img/1000392949.gif" class="img-fluid footerlogo" alt="Logo">
+                        <span data-ar="Eye of Horus Security" data-en="Eye of Horus Security">Eye of Horus Security</span>
+                    </div>
+                    <p class="footer-description" data-ar="نحن نعمل على توعية المستخدمين وحمايتهم من التهديدات الرقمية ومحاولات التصيد الإلكتروني." data-en="We work to educate and protect users from digital threats and phishing attempts.">نحن نعمل على توعية المستخدمين وحمايتهم من التهديدات الرقمية ومحاولات التصيد الإلكتروني.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title" data-ar="روابط مفيدة" data-en="Useful Links">روابط مفيدة</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                        <li><a href="assistant.html" data-ar="المساعد الذكي" data-en="Horus Assistant">المساعد الذكي</a></li>
+                        <li><a href="simulator.html" data-ar="اختبار المحاكاة" data-en="Phishing Simulator">اختبار المحاكاة</a></li>
+                        <li><a href="extension.html" data-ar="إضافة المتصفح" data-en="Browser Extension">إضافة المتصفح</a></li>
+                        <li><a href="report.html" data-ar="الإبلاغ عن موقع" data-en="Report Site">الإبلاغ عن موقع</a></li>
+                        <li><a href="blog.html" data-ar="المدونة" data-en="Blog">المدونة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/eyeofhorussec" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-ar="&copy; 2025 Eye of Horus Team. جميع الحقوق محفوظة." data-en="&copy; 2025 Eye of Horus Team. All rights reserved.">&copy; 2025 Eye of Horus Team. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="js/animate-on-scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
