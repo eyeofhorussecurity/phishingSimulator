@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Of Horus Security</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container justify-content-between">
+            <div class="nav-logo">
+                <img src="img/logo.png" class="img-fluid mainlogo" alt="Logo">
+                <span class="brand-text">EoH Security</span>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <a href="#" class="nav-link active" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                <a href="pages/assistant.html" class="nav-link" data-ar="المساعد الذكي"
+                    data-en="Horus Assistant">المساعد
+                    الذكي</a>
+                <a href="pages/simulator.html" class="nav-link" data-ar="اختبار المحاكاة"
+                    data-en="Phishing Simulator">اختبار
+                    المحاكاة</a>
+                <a href="pages/extension.html" class="nav-link" data-ar="إضافة المتصفح"
+                    data-en="Browser Extension">إضافة المتصفح</a>
+                <div class="dropdown d-none d-lg-block">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="dropdown-text" data-ar="المزيد &ensp;" data-en="More &ensp;">المزيد&ensp;</span> <i
+                            class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
+                        <li><a href="pages/report.html" class="dropdown-item" data-ar="الإبلاغ عن موقع"
+                                data-en="Report Site">الإبلاغ عن موقع</a></li>
+                        <li><a href="pages/blog.html" class="dropdown-item" data-ar="المدونة" data-en="Blog">المدونة</a>
+                        </li>
+                        <li><a href="https://www.facebook.com/eyeofhorussec" class="dropdown-item" data-ar="تابعنا"
+                                data-en="Follow Us">تابعنا</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mobile-more d-lg-none text-center">
+                    <a href="pages/report.html" class="nav-link text-center" data-ar="الإبلاغ عن موقع"
+                        data-en="Report Site">الإبلاغ عن
+                        موقع</a>
+                    <a href="pages/blog.html" class="nav-link text-center" data-ar="المدونة" data-en="Blog">المدونة</a>
+                    <a href="https://www.facebook.com/eyeofhorussec" class="nav-link text-center" data-ar="تابعنا"
+                        data-en="Follow Us">تابعنا</a>
+                </div>
+
+                <div class="nav-controls-mobile d-lg-none mt-3">
+                    <div class="dropdown-theme-switch">
+                        <div class="dropdown-toggle-switch">
+                            <label class="dropdown-switch-label">
+                                <input type="checkbox" class="dropdown-checkbox" id="themeToggleMobile">
+                                <span class="dropdown-slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="dropdown-lang-switch mt-2">
+                        <button class="lang-btn active" data-lang="ar" data-ar="العربية"
+                            data-en="Arabic">العربية</button>
+                        <button class="lang-btn" data-lang="en" data-ar="English" data-en="English">English</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-controls d-none d-lg-flex" id="nav-controls">
+                <div class="nav-switch">
+                    <div class="toggle-switch">
+                        <label class="switch-label">
+                            <input type="checkbox" class="checkbox" id="themeToggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="nav-language">
+                    <button class="lang-btn active" data-lang="ar">العربية</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+            </div>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <main class="main-content">
+        <section id="home" class="hero-section">
+            <div class="hero-background"></div>
+            <div class="container hero-container">
+                <div class="badge" data-en="Digital Security Ecosystem" data-ar="نظام الأمان الرقمي">نظام الأمان الرقمي
+                </div>
+                <h1 class="home-hero-title hero-title">
+                    <span data-en="Eye of Horus">Eye of Horus</span>
+                    <span class="text-primary text-glow" data-en="Security">Security</span>
+                </h1>
+                <p class="hero-description"
+                    data-en="Advancing the frontier of digital safety through education, real-time monitoring, and advanced scanning technologies."
+                    data-ar="التقدم في حدود السلامة الرقمية من خلال التعليم والمراقبة الفورية وتقنيات المسح المتقدمة.">
+                    التقدم في حدود السلامة الرقمية من خلال التعليم والمراقبة الفورية وتقنيات المسح المتقدمة.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-users"></i>
+                        <span class="stat-number">2,000+</span>
+                        <span class="stat-label" data-ar="مستخدم محمي" data-en="Protected Users">مستخدم محمي</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fa-solid fa-percent"></i>
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label" data-ar="معدل الحماية" data-en="Protection Rate">معدل
+                            الحماية</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-clock"></i>
+                        <span class="stat-number">5</span>
+                        <span class="stat-label" data-ar="دقائق للاختبار" data-en="Test Minutes">دقائق
+                            للاختبار</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="products-vision-section">
+            <div class="container">
+                <h2 class="section-title" data-ar="مشاريعنا الرئيسية" data-en="Our Main Projects">
+                    مشاريعنا الرئيسية</h2>
+
+                <div class="vision-intro scroll-element" data-delay="50">
+                    <p class="vision-text"
+                        data-ar="في Eye of Horus Security، نؤمن بأن التعليم هو أفضل دفاع ضد التهديدات السيبرانية. نحن نوفر أدوات وموارد شاملة لمساعدتك في البقاء آمناً في العالم الرقمي."
+                        data-en="At Eye of Horus Security, we believe that education is the best defense against cyber threats. We provide comprehensive tools and resources to help you stay safe in the digital world.">
+                        في Eye of Horus Security، نؤمن بأن التعليم هو أفضل دفاع ضد التهديدات السيبرانية. نحن نوفر أدوات
+                        وموارس شاملة لمساعدتك في البقاء آمناً في العالم الرقمي.</p>
+                </div>
+
+                <div class="projects-container">
+
+                    <!-- Project 1: EOH Phishing Simulator -->
+                    <section id="phishing-sim" class="project-section">
+                        <div class="project-grid">
+
+                            <div class="project-content scroll-element project-order-2 project-order-lg-1">
+                                <div class="feature-header">
+                                    <div class="icon-badge">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <h2 class="project-title" data-en="Eoh Phishing Simulator"
+                                        data-ar="محاكي التصيد الاحتيالي">
+                                        مكافح التصيد الاحتيالي
+                                    </h2>
+                                </div>
+
+                                <p class="project-description"
+                                    data-en="Education is the best defense. Our comprehensive simulator provides realistic scenarios to help users identify digital threats before they strike."
+                                    data-ar="التعليم هو أفضل دفاع. يوفر محاكينا الشامل سيناريوهات واقعية لمساعدة المستخدمين على تحديد التهديدات الرقمية قبل وقوعها.">
+                                    التعليم هو أفضل دفاع. يوفر محاكينا الشامل سيناريوهات واقعية لمساعدة المستخدمين على
+                                    تحديد التهديدات
+                                    الرقمية قبل وقوعها.
+                                </p>
+
+                                <div class="features-grid">
+
+                                    <div class="feature-item">
+                                        <i class="fas fa-globe feature-icon"></i>
+                                        <div>
+                                            <h4 class="feature-title" data-en="20+ Scenarios" data-ar="20+ سيناريو">
+                                                20+ سيناريو
+                                            </h4>
+                                            <p class="feature-desc" data-en="Diverse realistic threats"
+                                                data-ar="تهديدات واقعية متنوعة">
+                                                تهديدات واقعية متنوعة
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="feature-item">
+                                        <i class="fas fa-bolt feature-icon"></i>
+                                        <div>
+                                            <h4 class="feature-title" data-en="Browser Extension" data-ar="إضافة متصفح">
+                                                إضافة متصفح
+                                            </h4>
+                                            <p class="feature-desc" data-en="Real-time alerts"
+                                                data-ar="تنبيهات في الوقت الفعلي">
+                                                تنبيهات في الوقت الفعلي
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="feature-item">
+                                        <i class="fas fa-check-circle feature-icon"></i>
+                                        <div>
+                                            <h4 class="feature-title" data-en="Educational Tips"
+                                                data-ar="نصائح تعليمية">
+                                                نصائح تعليمية
+                                            </h4>
+                                            <p class="feature-desc" data-en="Expert security guidance"
+                                                data-ar="إرشادات أمان الخبراء">
+                                                إرشادات أمان الخبراء
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="feature-item">
+                                        <i class="fas fa-lock feature-icon"></i>
+                                        <div>
+                                            <h4 class="feature-title" data-en="Horus Assistant" data-ar="مساعد حورس">
+                                                مساعد حورس
+                                            </h4>
+                                            <p class="feature-desc" data-en="24/7 AI security support"
+                                                data-ar="دعم أمان الذكاء الاصطناعي 24/7">
+                                                دعم أمان الذكاء الاصطناعي 24/7
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="btn-container">
+                                    <a href="pages/simulator.html" class="btn btn-primary glow-sm mt-3">
+                                        <span data-en="Explore Simulator" data-ar="استكشف المحاكي">
+                                            استكشف المحاكي
+                                        </span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                    <a href="pages/extension.html" class="btn btn-primary glow-sm mt-3 mr-2">
+                                        <span data-en="Explore Browser Extension" data-ar="استكشف إضافة المتصفح">
+                                            استكشف إضافة المتصفح
+                                        </span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="project-image scroll-element project-order-1 project-order-lg-2">
+                                <div class="card-glow"></div>
+                                <div class="card card-light">
+                                    <div class="card-header-content">
+                                        <div class="card-meta" data-en="Digital Defense Training"
+                                            data-ar="تدريب الدفاع الرقمي">
+                                            تدريب الدفاع الرقمي
+                                        </div>
+
+                                        <div class="card-title-text" data-en="Protect Your Workspace"
+                                            data-ar="حماية مساحة عملك">
+                                            حماية مساحة عملك
+                                        </div>
+
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 75%;"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body-grid">
+                                        <div class="grid-column1">
+                                            <div class="skeleton">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <div class="grid-item grid-item2 w-100">
+
+                                                <div class="mini-browser">
+                                                    <!-- Top bar -->
+                                                    <div class="browser-bar">
+                                                        <span class="dot red"></span>
+                                                        <span class="dot yellow"></span>
+                                                        <span class="dot green"></span>
+                                                        <span class="url-bar-icon">http:exmaple.com</span>
+                                                    </div>
+
+                                                    <!-- Content -->
+                                                    <div class="browser-body">
+                                                        <div class="browser-ic">
+                                                            <span>Phishing Template</span>
+                                                        </div>
+
+                                                        <div class="browser-lines">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                        <div class="simulator-btn-container">
+                                                            <button
+                                                                class="btn btn-danger simulatorbtn">Phishing</button>
+                                                            <button class="btn btn-primary simulatorbtn">Real</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="grid-column2">
+                                            <div class="grid-item">
+                                                <div class="skeleton">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+
+                                            </div>
+                                            <div class="grid-item">
+                                                <div class="skeleton">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-- Project 2: Horus Parent -->
+                    <section id="horus-parent" class="project-section">
+                        <div class="project-grid">
+
+                            <div class="project-image scroll-element">
+                                <div class="card-glow"></div>
+                                <div class="card project-card card-light">
+                                    <div class="phone-container">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-content scroll-element">
+                                <div class="feature-header">
+                                    <div class="icon-badge">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <h2 class="project-title" data-en="Horus Parent">
+                                        Horus Parent
+                                    </h2>
+                                </div>
+
+                                <p class="project-description"
+                                    data-en="Enhancing children's safety through connected monitoring..."
+                                    data-ar="تعزيز سلامة الأطفال من خلال المراقبة المتصلة...">
+                                    تعزيز سلامة الأطفال من خلال المراقبة المتصلة. يسمح لك حورس الوالد بتوجيه ومراقبة
+                                    النشاط الرقمي في
+                                    الوقت الفعلي وبناء الثقة دون قيود كاملة.
+                                </p>
+
+                                <ul class="features-list">
+                                    <li>
+                                        <span class="bullet-point"></span>
+                                        <span data-en="Real-time connected monitoring system"
+                                            data-ar="نظام المراقبة المتصل في الوقت الفعلي">
+                                            نظام المراقبة المتصل في الوقت الفعلي
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="bullet-point"></span>
+                                        <span data-en="Early risk detection and behavioral guidance"
+                                            data-ar="الكشف المبكر عن المخاطر والإرشادات السلوكية">
+                                            الكشف المبكر عن المخاطر والإرشادات السلوكية
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="bullet-point"></span>
+                                        <span data-en="Promotes responsible digital behavior"
+                                            data-ar="يعزز السلوك الرقمي المسؤول">
+                                            يعزز السلوك الرقمي المسؤول
+                                        </span>
+                                    </li>
+                                </ul>
+
+                                <a href="#" class="btn btn-primary glow-sm">
+                                    <span data-en="Learn More" data-ar="اعرف أكثر">
+                                        اعرف أكثر
+                                    </span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-- Project 3: QrHorus -->
+                    <section id="qrhorus" class="project-section">
+                        <div class="project-grid">
+
+                            <div class="project-content scroll-element project-order-2 project-order-lg-1">
+                                <div class="feature-header">
+                                    <div class="icon-badge">
+                                        <i class="fas fa-qrcode"></i>
+                                    </div>
+                                    <h2 class="project-title" data-en="QrHorus" data-ar="حورس QR">
+                                        حورس QR
+                                    </h2>
+                                </div>
+
+                                <p class="project-description" data-en="Analyze QR codes instantly..."
+                                    data-ar="حلل رموز QR على الفور...">
+                                    حلل رموز QR على الفور لتحديد التصيد الاحتيالي والاحتيال أو النشاط الضار.
+                                </p>
+
+                                <div class="features-boxes">
+
+                                    <div class="feature-box">
+                                        <h4 class="feature-box-title">
+                                            <i class="fas fa-search"></i>
+                                            <span data-en="Instant Analysis" data-ar="تحليل فوري">
+                                                تحليل فوري
+                                            </span>
+                                        </h4>
+                                        <p class="feature-box-desc" data-en="Detailed risk assessment..."
+                                            data-ar="تقييم المخاطر المفصل لكل رمز تم مسحه.">
+                                            تقييم المخاطر المفصل لكل رمز تم مسحه.
+                                        </p>
+                                    </div>
+
+                                    <div class="feature-box">
+                                        <h4 class="feature-box-title">
+                                            <i class="fas fa-shield-alt"></i>
+                                            <span data-en="Fraud Prevention" data-ar="منع الاحتيال">
+                                                منع الاحتيال
+                                            </span>
+                                        </h4>
+                                        <p class="feature-box-desc" data-en="Blocks malicious redirections..."
+                                            data-ar="يحجب عمليات إعادة التوجيه الضارة وسرقة البيانات المحتملة.">
+                                            يحجب عمليات إعادة التوجيه الضارة وسرقة البيانات المحتملة.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <a href="#" class="btn btn-primary glow-sm">
+                                    <span data-en="Learn More" data-ar="اعرف اكثر">
+                                        اعرف اكثر
+                                    </span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="project-image scroll-element project-order-1 project-order-lg-2">
+                                <div class="card-glow"></div>
+                                <div class="card card-light">
+                                    <div class="qr-display">
+                                        <div class="qr-glow"></div>
+                                        <i class="fas fa-qrcode"></i>
+                                        <div class="qr-badge">
+                                            <i class="fas fa-shield-alt"></i>
+                                        </div>
+                                        <div class="qr-info">
+                                            <span class="qr-status" data-en="Scanning Secured"
+                                                data-ar="المسح محمي">Scanning Secured</span>
+                                            <div class="qr-version">HORUS-SYSTEM-V1.0.4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                </div>
+
+
+                <div class="values-section">
+                    <!-- Timeline + Tips Section -->
+                    <section class="tips-timeline-section">
+                        <div class="container">
+                            <h2 class="section-title">
+                                <h3 class="values-title" data-ar="قيمنا الأساسية" data-en="Our Core Values">قيمنا
+                                    الأساسية</h3>
+                            </h2>
+
+                            <div class="tips-grid-timeline">
+
+                                <!-- Tip Card 1 -->
+                                <div class="tip-timeline right scroll-element">
+                                    <div class="right">
+                                        <i class="fa-solid fa-lightbulb"></i>
+                                    </div>
+                                    <h3 data-ar="التعليم" data-en="Education">التعليم</h3>
+                                    <p data-ar="نحرص على توعية الجميع بأساسيات الأمان الإلكتروني وحماية بياناتهم من محاولات التصيد والاختراق"
+                                        data-en="We focus on educating everyone about the fundamentals of online security and protecting their data from phishing and hacking attempts">
+                                        نحرص على توعية الجميع بأساسيات الأمان الإلكتروني وحماية بياناتهم من محاولات
+                                        التصيد
+                                        والاختراق</p>
+                                </div>
+
+                                <!-- Tip Card 2 -->
+                                <div class="tip-timeline left scroll-element">
+                                    <div class="left">
+                                        <i class="fas fa-shield"></i>
+                                    </div>
+                                    <h3 data-ar="الحماية" data-en="Protection">الحماية</h3>
+                                    <p data-ar="نقدم نصائح عملية لحماية حساباتك وبياناتك من الاختراق ومحاولات التصيد الإلكتروني"
+                                        data-en="We provide practical tips to safeguard your accounts and data from hacking and phishing attempts">
+                                        نقدم نصائح عملية لحماية حساباتك وبياناتك من الاختراق ومحاولات التصيد الإلكتروني
+                                    </p>
+                                </div>
+                                <!-- Tip Card 3 -->
+                                <div class="tip-timeline right scroll-element">
+                                    <div class="right">
+                                        <i class="fas fa-handshake"></i>
+                                    </div>
+                                    <h3 data-ar="الموثوقية" data-en="Reliability">الموثوقية</h3>
+                                    <p data-ar="نلتزم بتقديم محتوى وخدمات موثوقة وآمنة، مع التركيز على حماية بيانات المستخدمين وبناء ثقة دائمة معهم"
+                                        data-en="We are committed to providing reliable and secure content and services, focusing on protecting users' data and building lasting trust through the highest standards of security and credibility">
+                                        نلتزم بتقديم محتوى وخدمات موثوقة وآمنة، مع التركيز على حماية بيانات المستخدمين
+                                        وبناء
+                                        ثقة دائمة معهم</p>
+                                </div>
+
+                                <!-- Tip Card 4 -->
+                                <div class="tip-timeline left scroll-element">
+                                    <div class="left">
+                                        <i class="fa-solid fa-lock"></i>
+                                    </div>
+                                    <h3 data-ar="التوعية المستمرة" data-en="Continuous Security Awareness">التوعية
+                                        المستمرة
+                                    </h3>
+                                    <p data-ar="نشارك المستخدمين باستمرار نصائح وأحدث طرق الحماية الرقمية، ونقدم لهم أمثلة عملية وتحذيرات دورية تساعدهم على اكتشاف أي نشاط مشبوه قبل الوقوع في الخطر.
+    " data-en="We continuously share tips and the latest digital protection methods with our users, providing practical examples and regular alerts to help them detect any suspicious activity before it becomes a threat.">
+                                        نشارك المستخدمين باستمرار نصائح وأحدث طرق الحماية الرقمية، ونقدم لهم أمثلة عملية
+                                        وتحذيرات دورية تساعدهم على اكتشاف أي نشاط مشبوه قبل الوقوع في الخطر
+                                    </p>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+        </section>
+
+        <section class="main-section">
+            <div class="accordion">
+                <h2 class="section-title scroll-element" data-ar="ماذا تطلب منك مواقع التصيد"
+                    data-en="What Phishing Sites Ask For">
+                    ماذا تطلب منك مواقع التصيد
+                </h2>
+
+                <div class="accordion-item scroll-element">
+                    <button class="accordion-header" data-ar="هل يطلب الموقع بيانات تسجيل الدخول الخاصة بي؟"
+                        data-en="Does the site ask for my login credentials?">
+                        هل يطلب الموقع بيانات تسجيل الدخول الخاصة بي؟
+                    </button>
+                    <div class="accordion-content">
+                        <p data-ar="نعم، هذا هو الهدف الأكثر شيوعاً تحاول المواقع الاحتيالية سرقة اسم المستخدم وكلمة المرور لحساباتك (مثل الفيسبوك، الجيميل، أو حسابك البنكي) عن طريق تزييف صفحة تسجيل دخول تبدو مطابقة تماماً للموقع الأصلي"
+                            data-en="Yes, this is the most common goal Phishing sites try to steal your username and password for accounts like Facebook, Gmail, or your bank by creating a fake login page that looks identical to the original.">
+                            نعم، هذا هو الهدف الأكثر شيوعاً تحاول المواقع الاحتيالية سرقة اسم المستخدم وكلمة المرور
+                            لحساباتك (مثل الفيسبوك، الجيميل، أو حسابك البنكي) عن طريق تزييف صفحة تسجيل دخول تبدو مطابقة
+                            تماماً للموقع الأصلي
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item scroll-element">
+                    <button class="accordion-header"
+                        data-ar="لماذا يطلب الموقع كلمة المرور لمرة واحدة (OTP) المرسلة إلى هاتفي؟"
+                        data-en="Why is the site asking for the 'One-Time Password' (OTP) sent to my phone?">
+                        لماذا يطلب الموقع كلمة المرور لمرة واحدة (OTP) المرسلة إلى هاتفي؟
+                    </button>
+                    <div class="accordion-content">
+                        <p data-ar="هذا خطير جداً. إذا حصل المخترق على كلمة المرور لمرة واحدة (OTP)، يمكنه تجاوز التحقق بخطوتين (2FA) والحصول على السيطرة الكاملة على حسابك، حتى لو كان يعرف كلمة المرور الخاصة بك."
+                            data-en="This is extremely dangerous. If a hacker gets your OTP, they can bypass Two-Factor Authentication (2FA) and take full control of your account, even if they already know your password.">
+                            هذا خطير جداً. إذا حصل المخترق على كلمة المرور لمرة واحدة (OTP)، يمكنه تجاوز التحقق بخطوتين
+                            (2FA) والحصول على السيطرة الكاملة على حسابك، حتى لو كان يعرف كلمة المرور الخاصة بك.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item scroll-element">
+                    <button class="accordion-header" data-ar="هل يطلب الموقع بيانات بطاقة الائتمان الخاصة بي؟"
+                        data-en="Does the site ask for my credit card information?">
+                        هل يطلب الموقع بيانات بطاقة الائتمان الخاصة بي؟
+                    </button>
+                    <div class="accordion-content">
+                        <p data-ar="تقوم المواقع الاحتيالية أحياناً بالادعاء بأن هناك مشكلة دفع أو جائزة نقدية تتطلب منك إدخال رقم البطاقة و تاريخ انتهاء الصلاحية و CVV. بمجرد إدخالها، يمكنهم سحب أموالك فوراً."
+                            data-en="Fake sites often claim there is a payment issue or a cash prize that requires you to enter your card number, expiry date, and CVV. Once entered, they can drain your funds immediately.">
+                            تقوم المواقع الاحتيالية أحياناً بالادعاء بأن هناك مشكلة دفع أو جائزة نقدية تتطلب منك إدخال
+                            رقم البطاقة و تاريخ انتهاء الصلاحية و CVV. بمجرد إدخالها، يمكنهم سحب أموالك فوراً.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item scroll-element">
+                    <button class="accordion-header" data-ar="هل يطلب الموقع بيانات شخصية مثل رقم الهوية أو العنوان؟"
+                        data-en="Does the site request personal details like my ID number or address?">
+                        هل يطلب الموقع بيانات شخصية مثل رقم الهوية أو العنوان؟
+                    </button>
+                    <div class="accordion-content">
+                        <p data-ar="نعم، تُستخدم هذه المعلومات لـ اختراق الهوية. قد يطلب المخترقون منك رقم الهوية أو تاريخ الميلاد أو العنوان للتمثيل بصفتك أو فتح حسابات احتيالية باسمك."
+                            data-en="Yes, this information is used for Identity Theft. Scammers may ask for your National ID, date of birth, or home address to impersonate you or open fraudulent accounts in your name.">
+                            نعم، تُستخدم هذه المعلومات لـ اختراق الهوية. قد يطلب المخترقون منك رقم الهوية أو تاريخ
+                            الميلاد أو العنوان للتمثيل بصفتك أو فتح حسابات احتيالية باسمك.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item scroll-element">
+                    <button class="accordion-header" data-ar="هل يطلب الموقع أن تقوم بـ تحديث معلوماتك فوراً؟"
+                        data-en="Does the site demand that you 'update your information' urgently?">
+                        هل يطلب الموقع أن تقوم بـ تحديث معلوماتك فوراً؟
+                    </button>
+                    <div class="accordion-content">
+                        <p data-ar="تعتمد مواقع التصيد على 'الضغط النفسي' قد تدعي أن حسابك 'سيتم تعليقه خلال 24 ساعة' أو 'تم اختراقه' لإجبارك على التصرف دون تفكير."
+                            data-en="Phishing sites rely on 'psychological pressure' They might claim your account will be 'suspended within 24 hours' or 'has been compromised' to force you to act without thinking.">
+                            تعتمد مواقع التصيد على 'الضغط النفسي' قد تدعي أن حسابك 'سيتم تعليقه خلال 24 ساعة' أو 'تم
+                            اختراقه' لإجبارك على التصرف دون تفكير.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- translate the accordions  -->
+
+        <section class="tips-section">
+            <div class="container">
+                <h2 class="section-title" data-ar="ملاحظات هامة للحماية" data-en="Important Safety Notes">
+                    <i class="fas fa-lightbulb"></i>
+                    <span class="section-title-text">ملاحظات هامة للحماية</span>
+                </h2>
+
+                <div class="tips-grid scroll-element">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <h3 class="tip-title" data-ar="تحقق من الروابط" data-en="Verify Links">تحقق من الروابط</h3>
+                        <p class="tip-description"
+                            data-ar="لا تضغط على الروابط المشبوهة في الرسائل الإلكترونية أو الرسائل النصية. تحقق من عنوان الرابط قبل النقر عليه."
+                            data-en="Don't click on suspicious links in emails or text messages. Verify the link address before clicking on it.">
+                            لا تضغط على الروابط المشبوهة في الرسائل الإلكترونية أو الرسائل النصية. تحقق من عنوان الرابط
+                            قبل
+                            النقر عليه.</p>
+                    </div>
+
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3 class="tip-title" data-ar="تأكد من عنوان الموقع" data-en="Verify Site Address">تأكد من عنوان
+                            الموقع</h3>
+                        <p class="tip-description"
+                            data-ar="تحقق من عنوان الموقع في شريط العناوين وتأكد من وجود رمز القفل (HTTPS) قبل إدخال أي بيانات شخصية."
+                            data-en="Check the site address in the address bar and ensure the lock icon (HTTPS) is present before entering personal data.">
+                            تحقق من عنوان الموقع في شريط العناوين وتأكد من وجود رمز القفل (HTTPS) قبل إدخال أي بيانات
+                            شخصية.
+                        </p>
+                    </div>
+
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="tip-title" data-ar="المصادقة الثنائية" data-en="Two-Factor Authentication">المصادقة
+                            الثنائية</h3>
+                        <p class="tip-description"
+                            data-ar="استخدم المصادقة الثنائية (2FA) في جميع حساباتك المهمة لإضافة طبقة حماية إضافية ضد المتسللين."
+                            data-en="Use two-factor authentication (2FA) on all important accounts for added protection against hackers.">
+                            استخدم المصادقة الثنائية (2FA) في جميع حساباتك المهمة لإضافة طبقة حماية إضافية ضد المتسللين.
+                        </p>
+                    </div>
+
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3 class="tip-title" data-ar="كن حذراً من المعلومات الشخصية"
+                            data-en="Protect Personal Information">كن حذراً من المعلومات الشخصية</h3>
+                        <p class="tip-description"
+                            data-ar="لا تشارك معلوماتك الشخصية أو المالية عبر البريد الإلكتروني أو المواقع غير الموثوقة."
+                            data-en="Don't share personal or financial information via email or untrusted websites.">لا
+                            تشارك معلوماتك الشخصية أو المالية عبر البريد الإلكتروني أو المواقع غير الموثوقة.</p>
+                    </div>
+
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <h3 class="tip-title" data-ar="تحديث البرامج" data-en="Update Software">تحديث البرامج</h3>
+                        <p class="tip-description"
+                            data-ar="حافظ على تحديث نظام التشغيل والبرامج باستمرار للحصول على أحدث تصحيحات الأمان."
+                            data-en="Keep your operating system and software updated for the latest security patches.">
+                            حافظ
+                            على تحديث نظام التشغيل والبرامج باستمرار للحصول على أحدث تصحيحات الأمان.</p>
+                    </div>
+
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3 class="tip-title" data-ar="الإبلاغ عن المحتوى المشبوه" data-en="Report Suspicious Content">
+                            الإبلاغ عن المحتوى المشبوه</h3>
+                        <p class="tip-description"
+                            data-ar="إذا واجهت محتوى مشبوهاً أو محاولة تصيد، قم بالإبلاغ عنها للجهات المختصة فوراً."
+                            data-en="If you encounter suspicious content or phishing attempts, report it to the authorities immediately.">
+                            إذا واجهت محتوى مشبوهاً أو محاولة تصيد، قم بالإبلاغ عنها للجهات المختصة فوراً.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content scroll-element">
+                <div class="footer-section scroll-element">
+                    <div class="footer-logo">
+                        <img src="img/1000392949.gif" class="img-fluid footerlogo" alt="Logo">
+                        <span data-ar="Eye of Horus Security" data-en="Eye of Horus Security">Eye of Horus
+                            Security</span>
+                    </div>
+                    <p class="footer-description"
+                        data-ar="نحن نعمل على توعية المستخدمين وحمايتهم من التهديدات الرقمية ومحاولات التصيد الإلكتروني."
+                        data-en="We work to educate and protect users from digital threats and phishing attempts.">نحن
+                        نعمل على توعية المستخدمين وحمايتهم من التهديدات الرقمية ومحاولات التصيد الإلكتروني.</p>
+                </div>
+                <div class="footer-section scroll-element">
+                    <h4 class="footer-title" data-ar="روابط مفيدة" data-en="Useful Links">روابط مفيدة</h4>
+                    <ul class="footer-links">
+                        <li><a href="/" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                        <li><a href="pages/assistant.html" data-ar="المساعد الذكي" data-en="Horus Assistant">المساعد
+                                الذكي</a></li>
+                        <li><a href="pages/simulator.html" data-ar="اختبار المحاكاة" data-en="Phishing Simulator">إختبار
+                                المحاكاة</a></li>
+                        <li><a href="pages/extension.html" data-ar="إضافة المتصفح" data-en="Browser Extension">إضافة
+                                المتصفح</a></li>
+                        <li><a href="pages/report.html" data-ar="الإبلاغ عن موقع" data-en="Report Site">الإبلاغ عن
+                                موقع</a></li>
+                        <li><a href="pages/blog.html" data-ar="المدونة" data-en="Blog">المدونة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section scroll-element">
+                    <h4 class="footer-title" data-ar="الشروط والسياسات" data-en="Terms & Policies">الشروط والسياسات</h4>
+                    <ul class="footer-links">
+                        <li><a href="pages/terms.html" data-ar="شروط الخدمة" data-en="Terms of Service">شروط الخدمة</a></li>
+                        <li><a href="pages/privacy.html" data-ar="سياسة الخصوصية" data-en="Privacy Policy">
+                                سياسة الخصوصية</a></li>
+
+                    </ul>
+                    <h4 class="footer-title mt-5" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/eyeofhorussec" class="social-link"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-ar="&copy; 2026 Eye of Horus Team. جميع الحقوق محفوظة."
+                    data-en="&copy; 2026 Eye of Horus Team. All rights reserved.">&copy; 2026 Eye of Horus Team. جميع
+                    الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/animate-on-scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

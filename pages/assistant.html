@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المساعد الذكي - EoH Security</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="../img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+    
+<body>
+    <nav class="navbar">
+        <div class="nav-container justify-content-between">
+            <div class="nav-logo" onclick="window.location.href='../index.html'">
+                <img src="../img/logo.png" class="img-fluid mainlogo" alt="Logo">
+                <span class="brand-text">EoH Security</span>
+            </div>
+    
+            <div class="nav-menu" id="nav-menu">
+                <a href="/" class="nav-link" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                <a href="assistant.html" class="nav-link active" data-ar="المساعد الذكي" data-en="Horus Assistant">المساعد الذكي</a>
+                <a href="simulator.html" class="nav-link" data-ar="اختبار المحاكاة" data-en="Phishing Simulator">اختبار المحاكاة</a>
+                <a href="extension.html" class="nav-link" data-ar="إضافة المتصفح" data-en="Browser Extension">إضافة المتصفح</a>
+    
+                <div class="dropdown d-none d-lg-block">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="dropdown-text" data-ar="المزيد &ensp;" data-en="More &ensp;">المزيد&ensp;</span> <i
+                            class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
+                        <li><a href="report.html" class="dropdown-item" data-ar="الإبلاغ عن موقع" data-en="Report Site">الإبلاغ عن موقع</a></li>
+                        <li><a href="blog.html" class="dropdown-item" data-ar="المدونة" data-en="Blog">المدونة</a></li>
+                        <li><a href="https://www.facebook.com/eyeofhorussec" class="dropdown-item" data-ar="تابعنا" data-en="Follow Us">تابعنا</a></li>
+                    </ul>
+                </div>
+    
+                <div class="mobile-more d-lg-none text-center">
+                    <a href="report.html" class="nav-link text-center" data-ar="الإبلاغ عن موقع" data-en="Report Site">الإبلاغ عن موقع</a>
+                    <a href="blog.html" class="nav-link text-center" data-ar="المدونة" data-en="Blog">المدونة</a>
+                    <a href="https://www.facebook.com/eyeofhorussec" class="nav-link text-center" data-ar="تابعنا" data-en="Follow Us">تابعنا</a>
+                </div>
+    
+                <div class="nav-controls-mobile d-lg-none mt-3">
+                    <div class="dropdown-theme-switch">
+                        <div class="dropdown-toggle-switch">
+                            <label class="dropdown-switch-label">
+                                <input type="checkbox" class="dropdown-checkbox" id="themeToggleMobile">
+                                <span class="dropdown-slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="dropdown-lang-switch mt-2">
+                        <button class="lang-btn active" data-lang="ar" data-ar="العربية" data-en="Arabic">العربية</button>
+                        <button class="lang-btn" data-lang="en" data-ar="English" data-en="English">English</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="nav-controls d-none d-lg-flex" id="nav-controls">
+                <div class="nav-switch">
+                    <div class="toggle-switch">
+                        <label class="switch-label">
+                            <input type="checkbox" class="checkbox" id="themeToggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="nav-language">
+                    <button class="lang-btn active" data-lang="ar">العربية</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+            </div>
+    
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="main-content">
+        <section class="hero-section" style="padding: 60px 0;">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                                    <i class="fas fa-robot"></i>
+                                    <span class="lang-text"
+                                            data-ar="المساعد الذكي للأمان الرقمي"
+                                            data-en="Horus Digital Security Assistant">
+                                            المساعد الذكي للأمان الرقمي
+                                    </span>
+                                    </h1>
+                    
+                    <p class="hero-description">
+    <span class="lang-text"
+          data-ar="تحدث مع المساعد الذكي وأرسل له المحتوى المشبوه للحصول على تحليل فوري"
+          data-en="Talk to the Horus digital security assistant and send it suspicious content for an instant analysis.">
+        تحدث مع المساعد الذكي وأرسل له المحتوى المشبوه للحصول على تحليل فوري
+    </span>
+</p>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="main-section">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-lg-4 mt-3 col-md-12 mb-3">
+                        <div class="card shadow-sm h-100 scroll-element">
+                            <div class="card-body">
+                                    <h6 class="card-title">
+                                    <i class="fas fa-lightbulb text-warning"></i>
+                                    <span class="lang-text"
+                                            data-ar="نصائح سريعة"
+                                            data-en="Quick Tips">
+                                            نصائح سريعة
+                                    </span>
+                                    </h6>
+
+                                <ul class="small">
+                                    <li data-ar="تحقق من عنوان المرسل في الرسائل الإلكترونية" data-en="Check the sender's address in emails">تحقق من عنوان المرسل في الرسائل الإلكترونية</li>
+                                    <li data-ar="انتبه للأخطاء الإملائية والنحوية" data-en="Be aware of spelling and grammar errors">انتبه للأخطاء الإملائية والنحوية</li>
+                                    <li data-ar="لا تضغط على الروابط المشبوهة" data-en="Don't click on suspicious links">لا تضغط على الروابط المشبوهة</li>
+                                    <li data-ar="تأكد من وجود HTTPS في المواقع المهمة" data-en="Make sure HTTPS is present on important websites">تأكد من وجود HTTPS في المواقع المهمة</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-3 col-md-12 mb-3">
+                        <div class="card shadow-sm h-100 scroll-element">
+                            <div class="card-body">
+                                    <h6 class="card-title">
+                                    <i class="fas fa-question-circle text-secondary"></i>
+                                    <span class="lang-text"
+                                            data-ar=" كيف يعمل المساعد؟"
+                                            data-en="How does the assistant work?">
+                                            كيف يعمل المساعد؟
+                                    </span>
+                                    </h6>
+                                <p class="small" data-ar="المساعد الذكي يستخدم خوارزميات متقدمة لتحليل المحتوى والبحث عن علامات التصيد الإلكتروني مثل الروابط المشبوهة والنصوص المضللة." data-en="The Horus assistant uses advanced algorithms to analyze content and look for phishing signs such as suspicious links and misleading texts.">
+                                    يستخدم المساعد الذكي خوارزميات متقدمة لتحليل المحتوى والبحث عن علامات التصيد الإلكتروني مثل الروابط المشبوهة والنصوص المضللة.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mt-3 col-md-12 mb-3">
+                        <div class="card shadow-sm h-100 scroll-element">
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    <i class="fas fa-history text-info"></i>
+                                    <span class="lang-text"
+                                            data-ar="التحليلات الأخيرة"
+                                            data-en="Recent Analyses">
+                                        التحليلات الأخيرة
+                                    </span>
+                                </h6>
+                                <div id="recentAnalyses" class="small" data-ar="لا توجد تحليلات سابقة" data-en="No previous analyses">
+                                    <p class="text-muted">لا توجد تحليلات سابقة</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card shadow-sm p-0">
+                            
+                                <div class="chat-container scroll-element">
+                                    <div class="chat-header">
+                                        <div class="message-avatar">
+                                            <i class="fas fa-robot"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-0" data-ar="المساعد الذكي" data-en="Horus Assistant">المساعد الذكي</h6>
+                                            <small class="opacity-75" data-ar="متصل 24/7" data-en="Online 24/7">متصل 24/7</small>
+                                        </div>
+                                        <div class="ms-auto">
+                                            <select class="form-select text-center form-select-sm" id="contentType" style="background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3); color: white;">
+                                                <option value="url" data-ar="رابط موقع" data-en="Website link">رابط موقع</option>
+                                                <option value="email" data-ar="رسالة إيميل" data-en="Email message">رسالة إيميل</option>
+                                                <option value="sms" data-ar="رسالة نصية" data-en="SMS message">رسالة نصية</option>
+                                                <option value="social" data-ar="منشور اجتماعي" data-en="Social post">منشور اجتماعي</option>
+                                                <option value="other" data-ar="أخرى" data-en="Other">أخرى</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="chat-messages" id="chatMessages">
+                                        <div class="message bot">
+                                            <div class="message-avatar">
+                                                <i class="fas fa-robot"></i>
+                                            </div>
+                                            <div class="message-content" data-ar="مرحباً! أنا المساعد الذكي للأمان الرقمي. يمكنني مساعدتك في تحليل المحتوى المشبوه. أرسل لي أي رابط أو رسالة أو صورة تشك في أنها قد تكون محاولة تصيد إلكتروني." data-en="Hello! I'm the Horus assistant for digital security. I can help you analyze suspicious content. Send me any link, message, or image you suspect might be a phishing attempt.">
+                                                مرحباً! أنا المساعد الذكي للأمان الرقمي. يمكنني مساعدتك في تحليل المحتوى المشبوه. أرسل لي أي رابط أو رسالة أو صورة تشك في أنها قد تكون محاولة تصيد إلكتروني.
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="quick-actions">
+    <button class="quick-action-btn" onclick="sendQuickMessage('أريد تحليل رابط مشبوه')">
+        <i class="fas fa-link"></i>
+        <span class="lang-text"
+              data-ar="تحليل رابط"
+              data-en="I want to analyze a link">
+            تحليل رابط
+        </span>
+    </button>
+
+    <button class="quick-action-btn" onclick="sendQuickMessage('لدي رسالة إيميل مشبوهة')">
+        <i class="fas fa-envelope"></i>
+        <span class="lang-text"
+              data-ar="رسالة إيميل"
+              data-en="I have an email message">
+            رسالة إيميل
+        </span>
+    </button>
+
+    <button class="quick-action-btn" onclick="sendQuickMessage('أريد تحليل رسالة نصية')">
+        <i class="fas fa-sms"></i>
+        <span class="lang-text"
+              data-ar="رسالة نصية"
+              data-en="I want to analyze an SMS message">
+            رسالة نصية
+        </span>
+    </button>
+
+    <button class="quick-action-btn" onclick="sendQuickMessage('كيف أحمي نفسي من التصيد؟')">
+        <i class="fas fa-shield-alt"></i>
+        <span class="lang-text"
+              data-ar="نصائح الحماية"
+              data-en="I want protection tips">
+            نصائح الحماية
+        </span>
+    </button>
+</div>
+
+                                        
+                                        <div class="message bot typing-indicator" id="typingIndicator">
+                                            <div class="message-avatar">
+                                                <i class="fas fa-robot"></i>
+                                            </div>
+                                            <div class="typing-indicator">
+                                                <div class="typing-dots">
+                                                    <div class="typing-dot"></div>
+                                                    <div class="typing-dot"></div>
+                                                    <div class="typing-dot"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="chat-input-area">
+                                        <div class="file-preview" id="filePreview"></div>
+                                        <div class="input-group-custom">
+                                            <button class="attachment-btn" onclick="document.getElementById('fileInput').click()">
+                                                <i class="fas fa-paperclip"></i>
+                                            </button>
+                                            <textarea 
+                                                class="message-input" 
+                                                id="messageInput" 
+                                                placeholder="اكتب رسالتك هنا أو الصق المحتوى المشبوه..."
+                                                rows="1"></textarea>
+                                            <button class="send-btn" id="sendBtn" onclick="sendAnimation()">
+                                                <i class="fas fa-paper-plane"></i>
+                                            </button>
+                                        </div>
+                                        <input type="file" id="fileInput" multiple accept="image/*,.pdf,.doc,.docx" style="display: none;">
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content scroll-element">
+                <div class="footer-section scroll-element">
+                    <div class="footer-logo">
+                        <img src="../img/1000392949.gif" class="img-fluid footerlogo" alt="Logo">
+                        <span data-ar="Eye of Horus Security" data-en="Eye of Horus Security">Eye of Horus
+                            Security</span>
+                    </div>
+                    <p class="footer-description"
+                        data-ar="نحن نعمل على توعية المستخدمين وحمايتهم من التهديدات الرقمية ومحاولات التصيد الإلكتروني."
+                        data-en="We work to educate and protect users from digital threats and phishing attempts.">نحن
+                        نعمل على توعية المستخدمين وحمايتهم من التهديدات الرقمية ومحاولات التصيد الإلكتروني.</p>
+                </div>
+                <div class="footer-section scroll-element">
+                    <h4 class="footer-title" data-ar="روابط مفيدة" data-en="Useful Links">روابط مفيدة</h4>
+                    <ul class="footer-links">
+                        <li><a href="/" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                        <li><a href="assistant.html" data-ar="المساعد الذكي" data-en="Horus Assistant">المساعد
+                                الذكي</a></li>
+                        <li><a href="simulator.html" data-ar="اختبار المحاكاة" data-en="Phishing Simulator">إختبار
+                                المحاكاة</a></li>
+                        <li><a href="extension.html" data-ar="إضافة المتصفح" data-en="Browser Extension">إضافة
+                                المتصفح</a></li>
+                        <li><a href="report.html" data-ar="الإبلاغ عن موقع" data-en="Report Site">الإبلاغ عن
+                                موقع</a></li>
+                        <li><a href="blog.html" data-ar="المدونة" data-en="Blog">المدونة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section scroll-element">
+                    <h4 class="footer-title" data-ar="الشروط والسياسات" data-en="Terms & Policies">الشروط والسياسات</h4>
+                    <ul class="footer-links">
+                        <li><a href="terms.html" data-ar="شروط الخدمة" data-en="Terms of Service">شروط الخدمة</a></li>
+                        <li><a href="privacy.html" data-ar="سياسة الخصوصية" data-en="Privacy Policy">
+                                سياسة الخصوصية</a></li>
+
+                    </ul>
+                    <h4 class="footer-title mt-5" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/eyeofhorussec" class="social-link"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-ar="&copy; 2026 Eye of Horus Team. جميع الحقوق محفوظة."
+                    data-en="&copy; 2026 Eye of Horus Team. All rights reserved.">&copy; 2026 Eye of Horus Team. جميع
+                    الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/assistant.js"></script>
+    <script src="js/animate-on-scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
