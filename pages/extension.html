@@ -50,14 +50,6 @@
                 </div>
     
                 <div class="nav-controls-mobile d-lg-none mt-3">
-                    <div class="dropdown-theme-switch">
-                        <div class="dropdown-toggle-switch">
-                            <label class="dropdown-switch-label">
-                                <input type="checkbox" class="dropdown-checkbox" id="themeToggleMobile">
-                                <span class="dropdown-slider"></span>
-                            </label>
-                        </div>
-                    </div>
                     <div class="dropdown-lang-switch mt-2">
                         <button class="lang-btn active" data-lang="ar" data-ar="العربية" data-en="Arabic">العربية</button>
                         <button class="lang-btn" data-lang="en" data-ar="English" data-en="English">English</button>
@@ -66,14 +58,6 @@
             </div>
     
             <div class="nav-controls d-none d-lg-flex" id="nav-controls">
-                <div class="nav-switch">
-                    <div class="toggle-switch">
-                        <label class="switch-label">
-                            <input type="checkbox" class="checkbox" id="themeToggle">
-                            <span class="slider"></span>
-                        </label>
-                    </div>
-                </div>
                 <div class="nav-language">
                     <button class="lang-btn active" data-lang="ar">العربية</button>
                     <button class="lang-btn" data-lang="en">EN</button>
@@ -117,12 +101,12 @@
                     <div class="feature-card scroll-element">
                         <i class="fas fa-bug"></i>
                         <h4 data-ar="كشف التصيد" data-en="Phishing Detection">كشف التصيد</h4>
-                        <p data-ar="تحديد ومنع المواقع المزيفة قبل أن تؤذيك" data-en="Identify and block fake sites before they harm you">تحديد ومنع المواقع المزيفة قبل أن تؤذيك</p>
+                        <p data-ar="تحديد المواقع المزيفة وتنبيهك قبل أن تؤذيك" data-en="Identifying fake websites and alerting you before they harm you">تحديد المواقع المزيفة وتنبيهك قبل أن تؤذيك</p>
                     </div>
                     <div class="feature-card scroll-element">
                         <i class="fas fa-sync"></i>
                         <h4 data-ar="تحديثات فورية" data-en="Real-time Updates">تحديثات فورية</h4>
-                        <p data-ar="تلقي تحديثات حول التهديدات وهي تحدث" data-en="Receive updates on threats as they happen">تلقي تحديثات حول التهديدات وهي تحدث</p>
+                        <p data-ar="تلقي تحديثات حول اجدد أساليب التصيد وهي تحدث" data-en="Receive updates on the latest phishing techniques as they happen">تلقي تحديثات حول اجدد أساليب التصيد وهي تحدث</p>
                     </div>
                     <div class="feature-card scroll-element">
                         <i class="fas fa-user-shield"></i>
@@ -136,20 +120,44 @@
         <!-- Step-by-Step Guide -->
         <section class="step-section">
             <div class="container">
-                <h2 class="section-title" data-ar="خطوات التحميل والتثبيت" data-en="Download & Install Steps">خطوات التحميل والتثبيت</h2>
+                <h2 class="section-title" data-ar="خطوات التحميل وكيفية الإستخدام" data-en="Download steps and how to use it">خطوات التحميل وكيفية الإستخدام</h2>
 
-                <!-- Step 1: Download -->
                 <div class="step-section">
                     <div class="step-container scroll-element">
                         <div class="step-number">1</div>
+                        <h3 class="step-title" data-ar="اختر متصفحك" data-en="Choose Your Browser">اختر متصفحك</h3>
+                        <div class="step-content">
+                            <p class="step-description" data-ar="اختر المتصفح الذي تستخدمه وتابع التعليمات الخاصة به:" data-en="Choose the browser you use and follow its instructions:">
+                                اختر المتصفح الذي تستخدمه وتابع التعليمات الخاصة به:
+                            </p>
+                            <div class="browser-icons">
+                                <a class="browser-icon" href="https://www.google.com/chrome/" target="_blank">
+                                    <i class="fab fa-chrome"></i>
+                                    <span data-ar="Chrome" data-en="Chrome">Chrome</span>
+                                </a>
+                                
+                                <a class="browser-icon" href="https://addons.mozilla.org/en-US/firefox/addon/eye-of-horus-guard/">
+                                    <i class="fab fa-firefox"></i>
+                                    <span data-ar="Firefox" data-en="Firefox">Firefox</span>
+                                </a>
+                                
+                                <a class="browser-icon" href="https://www.microsoft.com/edge" target="_blank">
+                                    <i class="fab fa-edge"></i>
+                                    <span data-ar="Edge" data-en="Edge">Edge</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-section">
+                    <div class="step-container scroll-element">
+                        <div class="step-number">2</div>
                         <h3 class="step-title" data-ar="اضغط على زر التحميل" data-en="Press the Download Button">اضغط على زر التحميل</h3>
                         <div class="step-content first-step-content">
-                            <p class="step-description" data-ar="ابدأ بالضغط على زر 'تحميل الآن' الموجود أدناه. سيتم تحميل ملف إضافة EoH-Guard على جهازك." data-en="Start by clicking the 'Download Now' button below. The EoH-Guard extension file will be downloaded to your computer.">
-                                ابدأ بالضغط على زر 'تحميل الآن' الموجود أدناه. سيتم تحميل ملف إضافة EoH-Guard على جهازك.
+                            <p class="step-description" data-ar="ابدأ بالضغط على زر 'Add to Firefox' او 'Add to Chrome' او 'Get'. سيتم تحميل إضافة EoH-Guard على جهازك." data-en="Start by clicking the 'Add to Firefox', 'Add to Chrome', or 'Get' button. The EoH-Guard add-on will then be downloaded to your device.">
+                                ابدأ بالضغط على زر 'Add to Firefox' او 'Add to Chrome' او 'Get'. سيتم تحميل إضافة EoH-Guard على جهازك.
                             </p>
-                            <button class="btn btn-primary extension-download-btn btn-lg mt-3" data-ar="تحميل الآن" data-en="Download Now" onclick="downloadExtension()">
-                                <i class="fas fa-download"></i> تحميل الآن
-                            </button>
                         </div>
                     </div>
                     <div class="step-highlight scroll-element">
@@ -158,101 +166,9 @@
                     </div>
                 </div>
 
-                <!-- Step 2: Choose Browser -->
-                <div class="step-section">
-                    <div class="step-container scroll-element">
-                        <div class="step-number">2</div>
-                        <h3 class="step-title" data-ar="اختر متصفحك" data-en="Choose Your Browser">اختر متصفحك</h3>
-                        <div class="step-content">
-                            <p class="step-description" data-ar="اختر المتصفح الذي تستخدمه وتابع التعليمات الخاصة به:" data-en="Choose the browser you use and follow its instructions:">
-                                اختر المتصفح الذي تستخدمه وتابع التعليمات الخاصة به:
-                            </p>
-                            <div class="browser-icons">
-                                <div class="browser-icon">
-                                    <i class="fab fa-chrome"></i>
-                                    <span data-ar="Chrome" data-en="Chrome">Chrome</span>
-                                </div>
-                                <div class="browser-icon">
-                                    <i class="fab fa-firefox"></i>
-                                    <span data-ar="Firefox" data-en="Firefox">Firefox</span>
-                                </div>
-                                <div class="browser-icon">
-                                    <i class="fab fa-edge"></i>
-                                    <span data-ar="Edge" data-en="Edge">Edge</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Step 3: Chrome Installation -->
                 <div class="step-section">
                     <div class="step-container scroll-element">
                         <div class="step-number">3</div>
-                        <h3 class="step-title" data-ar="تثبيت على Chrome" data-en="Install on Chrome">تثبيت على Chrome</h3>
-                        <div class="step-content">
-                            <p class="step-description" data-ar="اتبع الخطوات التالية لتثبيت الإضافة على Chrome:" data-en="Follow these steps to install the extension on Chrome:">
-                                اتبع الخطوات التالية لتثبيت الإضافة على Chrome:
-                            </p>
-                            <ul class="step-list">
-                                <li data-ar="اذهب إلى chrome://extensions في شريط العناوين" data-en="Go to chrome://extensions in the address bar">اذهب إلى chrome://extensions في شريط العناوين</li>
-                                <li data-ar="فعّل 'وضع المطورين' من الزاوية العلوية اليمنى" data-en="Enable 'Developer mode' from the top right corner">فعّل 'وضع المطورين' من الزاوية العلوية اليمنى</li>
-                                <li data-ar="انقر على 'تحميل الإضافة المفكوكة'" data-en="Click 'Load unpacked'">انقر على 'تحميل الإضافة المفكوكة'</li>
-                                <li data-ar="اختر مجلد الإضافة المحملة" data-en="Select the downloaded extension folder">اختر مجلد الإضافة المحملة</li>
-                                <li data-ar="تم! ستجد الإضافة الآن في قائمة الإضافات" data-en="Done! You'll now find the extension in your extensions list">تم! ستجد الإضافة الآن في قائمة الإضافات</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="step-highlight scroll-element">
-                        <i class="fas fa-info-circle"></i>
-                        <span data-ar="يجب أن تكون ملفات الإضافة مفك ضغطها لتتمكن من تحميلها" data-en="Extension files must be unzipped to load them">يجب أن تكون ملفات الإضافة مفك ضغطها لتتمكن من تحميلها</span>
-                    </div>
-                </div>
-
-                <!-- Step 4: Firefox Installation -->
-                <div class="step-section">
-                    <div class="step-container scroll-element">
-                        <div class="step-number">4</div>
-                        <h3 class="step-title" data-ar="تثبيت على Firefox" data-en="Install on Firefox">تثبيت على Firefox</h3>
-                        <div class="step-content">
-                            <p class="step-description" data-ar="اتبع الخطوات التالية لتثبيت الإضافة على Firefox:" data-en="Follow these steps to install the extension on Firefox:">
-                                اتبع الخطوات التالية لتثبيت الإضافة على Firefox:
-                            </p>
-                            <ul class="step-list">
-                                <li data-ar="اذهب إلى about:addons في شريط العناوين" data-en="Go to about:addons in the address bar">اذهب إلى about:addons في شريط العناوين</li>
-                                <li data-ar="انقر على أيقونة الترس وحدد 'تثبيت إضافة من ملف'" data-en="Click the gear icon and select 'Install Add-on From File'">انقر على أيقونة الترس وحدد 'تثبيت إضافة من ملف'</li>
-                                <li data-ar="اختر ملف الإضافة المحمل (.xpi أو .zip)" data-en="Select the downloaded extension file (.xpi or .zip)">اختر ملف الإضافة المحمل (.xpi أو .zip)</li>
-                                <li data-ar="انقر 'فتح' وسيبدأ التثبيت تلقائياً" data-en="Click 'Open' and installation will start automatically">انقر 'فتح' وسيبدأ التثبيت تلقائياً</li>
-                                <li data-ar="تم! ستظهر الإضافة في قائمة إضافاتك" data-en="Done! The extension will appear in your extensions list">تم! ستظهر الإضافة في قائمة إضافاتك</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Step 5: Edge Installation -->
-                <div class="step-section">
-                    <div class="step-container scroll-element">
-                        <div class="step-number">5</div>
-                        <h3 class="step-title" data-ar="تثبيت على Edge" data-en="Install on Edge">تثبيت على Edge</h3>
-                        <div class="step-content">
-                            <p class="step-description" data-ar="اتبع الخطوات التالية لتثبيت الإضافة على Edge:" data-en="Follow these steps to install the extension on Edge:">
-                                اتبع الخطوات التالية لتثبيت الإضافة على Edge:
-                            </p>
-                            <ul class="step-list">
-                                <li data-ar="اذهب إلى edge://extensions في شريط العناوين" data-en="Go to edge://extensions in the address bar">اذهب إلى edge://extensions في شريط العناوين</li>
-                                <li data-ar="فعّل 'وضع المطورين' من الزاوية العلوية اليسرى" data-en="Enable 'Developer mode' from the top left corner">فعّل 'وضع المطورين' من الزاوية العلوية اليسرى</li>
-                                <li data-ar="اسحب وأفلت ملف الإضافة المحمل إلى النافذة" data-en="Drag and drop the downloaded extension file to the window">اسحب وأفلت ملف الإضافة المحمل إلى النافذة</li>
-                                <li data-ar="سيطلب منك تأكيد التثبيت - انقر 'إضافة الإضافة'" data-en="It will ask for confirmation - click 'Add extension'">سيطلب منك تأكيد التثبيت - انقر 'إضافة الإضافة'</li>
-                                <li data-ar="تم! الإضافة جاهزة للاستخدام الآن" data-en="Done! The extension is ready to use">تم! الإضافة جاهزة للاستخدام الآن</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Step 6: Configure Settings -->
-                <div class="step-section">
-                    <div class="step-container scroll-element">
-                        <div class="step-number">6</div>
                         <h3 class="step-title" data-ar="ضبط الإعدادات" data-en="Configure Settings">ضبط الإعدادات</h3>
                         <div class="step-content">
                             <p class="step-description" data-ar="بعد التثبيت، قم بضبط إعدادات الإضافة حسب احتياجاتك:" data-en="After installation, configure the extension settings according to your needs:">
@@ -261,7 +177,7 @@
                             <ul class="step-list">
                                 <li data-ar="انقر على أيقونة EoH-Guard في شريط الأدوات" data-en="Click the EoH-Guard icon in the toolbar">انقر على أيقونة EoH-Guard في شريط الأدوات</li>
                                 <li data-ar="اختر 'الإعدادات' من القائمة المنسدلة" data-en="Select 'Settings' from the dropdown menu">اختر 'الإعدادات' من القائمة المنسدلة</li>
-                                <li data-ar="فعّل 'حماية التتبع' و'كشف التصيد'" data-en="Enable 'Tracker Protection' and 'Phishing Detection'">فعّل 'حماية التتبع' و'كشف التصيد'</li>
+                                <li data-ar="فعّل 'حماية التتبع' و'إظهار تنبيهات التصيد'" data-en="Enable 'Fingerprint Protection' and 'Show Phishing Alerts'">فعّل 'حماية التتبع' و'إظهار تنبيهات التصيد'</li>
                                 <li data-ar="يمكنك تخصيص مستوى الحماية (منخفض/متوسط/عالي)" data-en="You can customize protection level (Low/Medium/High)">يمكنك تخصيص مستوى الحماية (منخفض/متوسط/عالي)</li>
                                 <li data-ar="احفظ الإعدادات وتصفح بآمان!" data-en="Save settings and browse safely!">احفظ الإعدادات وتصفح بآمان!</li>
                             </ul>
@@ -273,10 +189,9 @@
                     </div>
                 </div>
 
-                <!-- Step 7: How to Use -->
                 <div class="step-section">
                     <div class="step-container scroll-element">
-                        <div class="step-number">7</div>
+                        <div class="step-number">4</div>
                         <h3 class="step-title" data-ar="كيفية الاستخدام" data-en="How to Use">كيفية الاستخدام</h3>
                         <div class="step-content">
                             <p class="step-description" data-ar="بعد التثبيت والتكوين، إليك كيفية استخدام الإضافة:" data-en="After installation and configuration, here's how to use the extension:">
@@ -293,10 +208,9 @@
                     </div>
                 </div>
 
-                <!-- Step 8: Troubleshooting -->
                 <div class="step-section">
                     <div class="step-container scroll-element">
-                        <div class="step-number">8</div>
+                        <div class="step-number">5</div>
                         <h3 class="step-title" data-ar="حل المشاكل" data-en="Troubleshooting">حل المشاكل</h3>
                         <div class="step-content">
                             <p class="step-description" data-ar="إذا واجهت أي مشاكل، جرب الحلول التالية:" data-en="If you encounter any issues, try the following solutions:">
@@ -376,10 +290,5 @@
     <script src="../js/script.js"></script>
     <script src="js/animate-on-scroll.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        function downloadExtension() {
-           window.location.href = 'https://github.com/eyeofhorussecurity/EoH-Guard/releases/download/eoh-guard/EohGuard.zip';
-        }
-    </script>
 </body>
 </html>
