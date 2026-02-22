@@ -398,21 +398,20 @@ function switchToArabic() {
 
 function updatePageContent(lang) {
   const elements = document.querySelectorAll("[data-ar][data-en]")
-
   elements.forEach((el) => {
-    if (lang === "en") {
-      el.textContent = el.getAttribute("data-en")
-    } else {
-      el.textContent = el.getAttribute("data-ar")
+    const text = lang === "en"
+      ? el.getAttribute("data-en")
+      : el.getAttribute("data-ar")
+    if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
+      el.placeholder = text
+    } 
+    else if (el.tagName === "OPTION") {
+      el.textContent = text
+    }
+    else {
+      el.textContent = text
     }
   })
-
-  // Special handling for html/body attributes
-  if (lang === "en") {
-    document.body.style.direction = "ltr"
-  } else {
-    document.body.style.direction = "rtl"
-  }
 }
 
 function updateLanguageButtons(lang) {

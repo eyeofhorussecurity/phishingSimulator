@@ -10,7 +10,7 @@
   --radius: 10px;
 }
 
-body.dark-mode {
+body {
   --text-muted: #ffffff;
 }
 
@@ -152,13 +152,6 @@ body.dark-mode {
 }
 
 .project-title {
-  color: rgb(25, 0, 255);
-  font-size: 1.875rem;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-}
-
-body.dark-mode .project-title {
   color: rgb(0, 174, 255);
   font-size: 1.875rem;
   font-weight: 700;
@@ -246,9 +239,6 @@ body.dark-mode .project-title {
   padding: 16px;
   border: 1px solid var(--border-color);
   border-radius: 8px;
-}
-
-body.dark-mode .feature-box {
   background: rgb(0, 0, 0);
 }
 
@@ -697,10 +687,6 @@ body.dark-mode .feature-box {
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 20px;
-  color: var(--text-secondary);
-}
-
-body.dark-mode .terms-hero .hero-title {
   color: #ffffff;
 }
 
@@ -831,12 +817,8 @@ body.dark-mode .terms-hero .hero-title {
 .section-header h2 {
   font-size: 1.625rem;
   font-weight: 700;
-  color: var(--text-secondary);
-  margin: 0;
-}
-
-body.dark-mode .section-header h2 {
   color: #ffffff;
+  margin: 0;
 }
 
 .section-content {
@@ -851,14 +833,10 @@ body.dark-mode .section-header h2 {
 
 .section-content h4 {
   font-weight: 700;
-  color: var(--text-secondary);
+  color: #ffffff;
   margin-top: 24px;
   margin-bottom: 12px;
   font-size: 1.125rem;
-}
-
-body.dark-mode .section-content h4 {
-  color: #ffffff;
 }
 
 .feature-list {
